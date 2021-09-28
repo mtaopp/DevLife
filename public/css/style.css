@@ -6138,7 +6138,6 @@ footer {
   display: flex;
   background-color: #929292;
   color: white;
-  justify-content: center;
 }
 
 .footdiv {
@@ -6148,7 +6147,7 @@ footer {
 }
 
 .maindiv {
-  height: 100vh;
+  min-height: 100vh;
   background-color: gray;
 }
 

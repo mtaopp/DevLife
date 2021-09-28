@@ -22,7 +22,6 @@ footer {
   display:flex;
   background-color: rgb(146, 146, 146);
   color: white;
-  justify-content: center;
 }
 
 .footdiv{
@@ -32,10 +31,10 @@ footer {
 }
 
 .maindiv{
-  height:100vh;
-  background-color:gray
+  min-height:100vh;
+  background-color:gray;
 }
 
 .navbar{
-  background-color:rgb(85, 85, 85)
+  background-color:rgb(85, 85, 85);
 }
