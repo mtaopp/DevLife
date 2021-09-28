@@ -28,14 +28,12 @@ Route::get('/profile', 'UserController@index')->middleware(['auth'])->name('dash
 
 Route::get('/profile/edit', 'UserController@edit')->middleware(['auth'])->name('dashboard');
 
-
-
-
 require __DIR__.'/auth.php';
 
 Route::get('/home', function() {
     return view('home');
 });
+
 Route::get('/article', function() {
   return view('post');
 });
