@@ -6123,18 +6123,25 @@ readers do not read off random characters that represent icons */
   width: auto;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+
+#navbar-link a {
+  color: #c7bb8f;
+  text-decoration: none;
+}
+
+.dashboard {
+  width: 15vh;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
-}
-
-#navbar {
-  background-color: black;
-}
-#navbar a {
-  color: #c7bb8f;
-  text-decoration: none;
 }
 
 html body {
@@ -6157,10 +6164,6 @@ footer {
 .maindiv {
   min-height: 100vh;
   background-color: #adb1b5;
-}
-
-.navbar {
-  background-color: #555555;
 }
 
 .bttimg {
