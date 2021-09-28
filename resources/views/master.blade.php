@@ -91,20 +91,20 @@
     </nav>
 
   <main>
-    <div class="row">
-    <div class="leftdiv col-sm-2">
+    <div class="row w-100">
+    <div class="leftdiv col-sm-2 p-0">
       @yield("left")
     </div>
-    <div class="maindiv col-sm-8">
+    <div class="maindiv col-sm-8 p-0">
       @yield("main")
     </div>
-    <div class="rightdiv col-sm-2">
+    <div class="rightdiv col-sm-2 p-0">
       @yield("right")
     </div>
     </div>
   </main>
 
-  <footer id="footer" class="container-fluid text-center">
+  <footer id="footer" class="container-fluid text-center p-0">
     <div id="copyright" class="footdiv">
       <p>Copyright</p>
     </div>
