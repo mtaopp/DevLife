@@ -1,11 +1,9 @@
-<<<<<<< Updated upstream
 @extends("master")
 
 @section("main")
   <div class="profilewindow">
     
   </div>
-=======
 @extends('master')
 
 @section('pageTitle', 'Profile')
@@ -18,4 +16,16 @@ Username: [usern]
 
 
 @endsection
->>>>>>> Stashed changes
+<div class="profilewindow">
+
+  {{ $username }}
+  <br>
+  {{ $firstname }}
+  <br>
+  {{ $lastname }}
+  <br>
+  {{ $email }}
+  <br>
+  {{ $id }}
+</div>
+@endsection
