@@ -21,11 +21,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-
-
-
 Route::get('/profile', 'UserController@index')->middleware(['auth'])->name('dashboard');
-
 
 Route::get('/editProfile', 'UserController@edit')->middleware(['auth'])->name('dashboard');
 
