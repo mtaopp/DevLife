@@ -12,13 +12,7 @@
     box-sizing: content-box;
 }
 
-#navbar{
-  background-color:black;
-  a{
-    color:#c7bb8f;
-    text-decoration: none;
-  }
-}
+
 
 html{
     body{
@@ -43,8 +37,13 @@ footer {
   background-color:#adb1b5;
 }
 
-.navbar{
-  background-color:rgb(85, 85, 85);
+
+
+.bttimg{
+  border-radius: 50%;
+  position:fixed;
+  bottom:20px;
+  right:20px;
 }
 
 #letterD{
