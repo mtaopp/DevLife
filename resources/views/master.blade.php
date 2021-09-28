@@ -13,7 +13,7 @@
     </head>
 
     <body class="w-100">
-    <nav class="navbar navbar-expand-sm bg-dark" id="navbar">
+    <nav class="navbar navbar-expand-sm" id="navbar">
     <svg width="59.705mm" height="26.046mm" version="1.1" viewBox="0 0 59.705 26.046" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
                         <g transform="translate(-50.259 -104.98)" stroke-width=".26458">
                             <g transform="matrix(2.3015 0 0 2.5702 -43.012 -121.93)" aria-label="{">
@@ -66,7 +66,7 @@
 
             <div class="dropdown-menu">
                 <!-- Dropdown menu links -->
-                <a href="{{ route('register') }}">Register</a>
+                <a href="{{ route('register') }}">Register1</a>
             </div>
         @endif
         @if (Route::has('login'))
