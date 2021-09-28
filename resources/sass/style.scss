@@ -1,0 +1,19 @@
+@import 'imports';
+@import 'variables';
+
+@import 'header';
+@import 'navbar';
+@import 'main';
+@import 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html{
+    body{
+        background-color: aquamarine;
+    }
+}
