@@ -15,7 +15,6 @@ asdasdasd
 
         <form method="POST" action="{{ route('login') }}">
             @csrf
-
             <!-- Email Address -->
             <div>
                 <label for="email" :value="__('Email')" />
