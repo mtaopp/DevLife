@@ -39,7 +39,3 @@ Route::get('/home', function() {
 Route::get('/article', function() {
   return view('post');
 });
-
-Route::get('/profile', 'UserController@index')->middleware(['auth'])->name('dashboard');
-
-Route::get('/profile/edit', 'UserController@edit')->middleware(['auth'])->name('dashboard');
