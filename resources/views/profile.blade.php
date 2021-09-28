@@ -12,14 +12,18 @@
   <div class="profilewindow">
 
   </div>
+<<<<<<< Updated upstream
   
+=======
+
+>>>>>>> Stashed changes
 @section('pageTitle', 'Profile')
 
 @section('main')
 
-<h2>Welcome [username]</h2>
+<h2>Welcome {{$firstname}} {{$lastname}} </h2>
 
-Username: [usern]
+Username: {{$username}}
 
 
 @endsection
