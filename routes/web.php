@@ -21,11 +21,22 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+
+
+
+Route::get('/profile', 'UserController@index')->middleware(['auth'])->name('dashboard');
+
+Route::get('/profile/edit', 'UserController@edit')->middleware(['auth'])->name('dashboard');
+
+
+
+
 require __DIR__.'/auth.php';
 
 Route::get('/home', function() {
     return view('home');
 });
+
 
 Route::get('/profile', 'UserController@index')->middleware(['auth'])->name('dashboard');
 

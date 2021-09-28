@@ -1,8 +1,16 @@
 @extends("master")
 
 @section("main")
+<div class="profilewindow">
+
+  {{ $username }}
+  {{ $firstname }}
+  {{ $lastname }}
+  {{ $email }}
+  {{ $id }}
+</div>
   <div class="profilewindow">
-    
+
   </div>
 @extends('master')
 
