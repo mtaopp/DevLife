@@ -14,6 +14,28 @@
 
 html{
     body{
-        background-color: aquamarine;
+        background-color: rgb(255, 255, 255);
     }
+}
+footer {
+  text-align: center;
+  display:flex;
+  background-color: rgb(146, 146, 146);
+  color: white;
+  justify-content: center;
+}
+
+.footdiv{
+  flex:1;
+  height:60px;
+  padding:50px;
+}
+
+.maindiv{
+  height:100vh;
+  background-color:gray
+}
+
+.navbar{
+  background-color:rgb(85, 85, 85)
 }

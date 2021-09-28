@@ -1,2 +1,11 @@
+@extends("master")
 
-{{ $username }}
+@section("main")
+<div class="profilewindow">
+
+  {{ $username }}
+  {{ $firstname }}
+  {{ $lastname }}
+  {{ $email }}
+  {{ $id }}
+</div>

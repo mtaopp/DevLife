@@ -6130,5 +6130,28 @@ readers do not read off random characters that represent icons */
 }
 
 html body {
-  background-color: aquamarine;
+  background-color: white;
+}
+
+footer {
+  text-align: center;
+  display: flex;
+  background-color: #929292;
+  color: white;
+  justify-content: center;
+}
+
+.footdiv {
+  flex: 1;
+  height: 60px;
+  padding: 50px;
+}
+
+.maindiv {
+  height: 100vh;
+  background-color: gray;
+}
+
+.navbar {
+  background-color: #555555;
 }
