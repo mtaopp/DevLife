@@ -13,10 +13,8 @@
     </head>
 
     <body class="w-100">
-        <header class="w-100 m-0 p-0">
-            <div class="d-flex justify-content-between pl-2 pt-2">
-                <div class="flex-grow-2">
-                    <svg width="59.705mm" height="26.046mm" version="1.1" viewBox="0 0 59.705 26.046" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <nav class="navbar navbar-expand-sm bg-dark" id="navbar">
+    <svg width="59.705mm" height="26.046mm" version="1.1" viewBox="0 0 59.705 26.046" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
                         <g transform="translate(-50.259 -104.98)" stroke-width=".26458">
                             <g transform="matrix(2.3015 0 0 2.5702 -43.012 -121.93)" aria-label="{">
                                 <path d="m43.461 98.419 0.2067-0.60978c-0.75964-0.24805-1.049-0.88366-1.049-1.7932v-1.0594c0-0.70796-0.28939-1.2867-0.87333-1.602 0.58394-0.31006 0.87333-0.8785 0.87333-1.602v-1.0645c0-0.9095 0.28939-1.5555 1.049-1.7983l-0.2067-0.60461c-1.3436 0.37724-1.8603 1.2247-1.8603 2.4029v1.0645c0 0.78031-0.34623 1.2196-1.0749 1.2196v0.75964c0.72864 0 1.0749 0.45475 1.0749 1.2247v1.0594c0 1.1731 0.51676 2.0257 1.8603 2.4029z" stroke-width=".26458"/>
@@ -42,33 +40,26 @@
                             </g>
                         </g>
                     </svg>
-                </div>
-                <div class="flex-grow-1 bg-info">
-                    <nav class="container w-25">
-                        <div class="d-flex justify-content-around">
-                            <div>News</div>
-                            <div>Blogs</div>
-                            <div>Register</div>
-                            <div>Newsletter</div>
-                        </div>
-                    </nav>
-                </div>
-                <div class="flex-grow-2">
-
-
-
-                <div class="dropdown pr-2" >
-
-
-<!-- Split dropleft button -->
-<div class="btn-group">
-
-
-    <div class="btn-group dropleft" role="group">
-
-
-
-        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../mainBlog.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../newsletter.html">Newsletter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../user.html">User</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../login.html">Login</a>
+        </li>
+      </ul>
+    </div>
+      <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         </button>
 
         @if (Route::has('register'))
@@ -78,8 +69,6 @@
                 <a href="{{ route('register') }}">Register</a>
             </div>
         @endif
-
-    </div>
         @if (Route::has('login'))
             @auth
 
@@ -98,33 +87,40 @@
 
             @endauth
         @endif
-
-
     </div>
+    </nav>
 
+  <main>
+    <div class="leftdiv col-sm-2">
+      @yield("left")
+    </div>
+    <div class="maindiv col-sm-8">
+      @yield("main")
+    </div>
+    <div class="rightdiv col-sm-2">
+      @yield("right")
+    </div>
+  </main>
 
+  <footer id="footer" class="container-fluid text-center">
+    <div id="copyright" class="footdiv">
+      <p>Copyright</p>
+    </div>
+    <div id="socialmedia" class="footdiv">
+      <p>Social Media</p>
+    </div>
+    <div id="Terms of Service" class="footdiv">
+      <p>ToS</p>
+    </div>
+    <div id="Newsletter" class="footdiv">
+      <p>newsletter</p>
+    </div>
+  </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-                </div>
-            </div>
-        </header>
-
-        <main>
-        </main>
-    </body>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>
 
 
