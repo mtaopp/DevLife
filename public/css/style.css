@@ -6139,7 +6139,6 @@ footer {
   background-color: #3a3a3a;
   color: white;
   padding: 20px;
-  width: 100%;
 }
 
 .footdiv {
@@ -6148,4 +6147,5 @@ footer {
 
 .maindiv {
   height: 100vh;
+  background-color: gray;
 }

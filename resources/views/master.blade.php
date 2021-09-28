@@ -91,6 +91,7 @@
     </nav>
 
   <main>
+    <div class="row">
     <div class="leftdiv col-sm-2">
       @yield("left")
     </div>
@@ -99,6 +100,7 @@
     </div>
     <div class="rightdiv col-sm-2">
       @yield("right")
+    </div>
     </div>
   </main>
 
