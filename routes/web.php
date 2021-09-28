@@ -26,6 +26,4 @@ require __DIR__.'/auth.php';
 Route::get('/home', function() {
     return view('home');
 });
-Route::get('/user', function() {
-  return view('profile');
-});
+
