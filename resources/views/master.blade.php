@@ -14,7 +14,7 @@
 
     <body class="w-100">
     <nav class="navbar navbar-expand-sm" id="navbar">
-    <svg width="50.705mm" height="20.046mm" version="1.1" viewBox="0 0 59.705 26.046" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <svg width="70.705mm" height="45.046mm" version="1.1" viewBox="0 0 59.705 26.046" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
                         <g transform="translate(-50.259 -104.98)" stroke-width=".26458">
                             <g transform="matrix(2.3015 0 0 2.5702 -43.012 -121.93)" aria-label="{">
                                 <path id="curlyOpen" d="m43.461 98.419 0.2067-0.60978c-0.75964-0.24805-1.049-0.88366-1.049-1.7932v-1.0594c0-0.70796-0.28939-1.2867-0.87333-1.602 0.58394-0.31006 0.87333-0.8785 0.87333-1.602v-1.0645c0-0.9095 0.28939-1.5555 1.049-1.7983l-0.2067-0.60461c-1.3436 0.37724-1.8603 1.2247-1.8603 2.4029v1.0645c0 0.78031-0.34623 1.2196-1.0749 1.2196v0.75964c0.72864 0 1.0749 0.45475 1.0749 1.2247v1.0594c0 1.1731 0.51676 2.0257 1.8603 2.4029z" stroke-width=".26458"/>
