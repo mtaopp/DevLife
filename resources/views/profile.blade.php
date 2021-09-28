@@ -11,13 +11,11 @@
   <div class="profilewindow">
   </div>
 
-
 @section('pageTitle', 'Profile')
 @section('main')
 <h2>Welcome {{$firstname}} {{$lastname}} </h2>
 
 Username: {{$username}}
-
 
 @endsection
 <div class="profilewindow">
