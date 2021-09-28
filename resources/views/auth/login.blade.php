@@ -2,7 +2,7 @@
 
 
 @section('left')
-asdasdasd
+{{-- Hier ist links --}}
 @endsection
 
 
@@ -55,5 +55,5 @@ asdasdasd
 @endsection
 
 @section('right')
-RIGHTS
+{{-- RIGHTS --}}
 @endsection
