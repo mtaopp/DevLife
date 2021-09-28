@@ -13,6 +13,13 @@
 }
 
 
+#navbar{
+  background-color:black;
+  a{
+    color:#c7bb8f;
+    text-decoration: none;
+  }
+}
 
 html{
     body{
@@ -24,12 +31,7 @@ footer {
   display:flex;
   background-color: rgb(0, 0, 0);
   color: #c7bb8f;
-  /*
-  background-color: rgb(146, 146, 146);
-  color: white;
-  */
   justify-content: center;
-
 }
 
 .footdiv{
@@ -91,4 +93,35 @@ footer {
     display:none;
   }
 
+}
+
+#letterD{
+  stroke: #c7bb8f;
+}
+#letterE{
+  stroke: #c7bb8f;
+}
+#letterV{
+  stroke: #c7bb8f;
+}
+#letterSlash{
+  stroke: #c7bb8f;
+}
+#letterL{
+  stroke: #c7bb8f;
+}
+#letterI{
+  stroke: #c7bb8f;
+}
+#letterF{
+  stroke: #c7bb8f;
+}
+#letterE2{
+  stroke: #c7bb8f;
+}
+#curlyOpen{
+  stroke: #c7bb8f;
+}
+#curlyClose{
+  stroke: #c7bb8f;
 }
