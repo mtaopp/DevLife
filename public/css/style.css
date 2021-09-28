@@ -6130,7 +6130,7 @@ readers do not read off random characters that represent icons */
 }
 
 html body {
-  background-color: white;
+  background-color: hex(f3f3f3);
 }
 
 footer {
