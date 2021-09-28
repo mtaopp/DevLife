@@ -88,17 +88,9 @@
     <div class="maindiv col-sm-8 p-0">
       @yield("main")
     </div>
-<<<<<<< Updated upstream
-    <div class="rightdiv col-sm-2 p-0">
-      @yield("right")
-      <div class="backtotop">
-    </div>
-    </div>
-=======
       <div class="rightdiv col-sm-2 p-0">
         @yield("right")
       </div>
->>>>>>> Stashed changes
     </div>
   </main>
   <footer id="footer" class="container-fluid text-center p-0">
