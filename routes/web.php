@@ -36,7 +36,9 @@ require __DIR__.'/auth.php';
 Route::get('/home', function() {
     return view('home');
 });
-
+Route::get('/article', function() {
+  return view('post');
+});
 
 Route::get('/profile', 'UserController@index')->middleware(['auth'])->name('dashboard');
 
