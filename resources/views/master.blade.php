@@ -100,6 +100,8 @@
     </div>
     <div class="rightdiv col-sm-2 p-0">
       @yield("right")
+      <div class="backtotop">
+    </div>
     </div>
     </div>
   </main>
