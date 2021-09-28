@@ -34,57 +34,38 @@
                                 <path id="letterE2" d="m89.641 120.09c0.925 0 1.5813-0.29972 1.9792-0.68729l-0.39791-0.66146c-0.37724 0.34623-0.894 0.55294-1.5813 0.55294-0.94568 0-1.4883-0.76998-1.5089-1.8448l0.0155-0.0258h3.6277v-0.63562c0-1.5141-0.78548-2.5011-2.2893-2.5011-1.2971 0-2.3926 1.1886-2.3926 2.7802v0.22738c0 1.6536 0.99218 2.7957 2.5476 2.7957zm-0.15503-5.0023c0.84232 0 1.2712 0.60461 1.2712 1.4056v0.13435h-2.5786l-0.01034-0.0258c0.10852-0.86817 0.63562-1.5141 1.3177-1.5141z"/>
                             </g>
                         </g>
-                        <g transform="matrix(2.3015 0 0 2.5702 -22.353 -121.82)" aria-label="}">
-                            <path id="curlyClose" d="m54.349 97.767 0.2067 0.60978c1.3384-0.37724 1.8552-1.2299 1.8552-2.4029v-1.0594c0-0.76998 0.34106-1.2247 1.08-1.2247v-0.75964c-0.73897 0-1.08-0.43925-1.08-1.2196v-1.0645c0-1.1782-0.51676-2.0257-1.8552-2.4029l-0.2067 0.60461c0.74414 0.24288 1.0439 0.88883 1.0439 1.7983v1.0645c0 0.74931 0.30489 1.3177 0.95084 1.602-0.64595 0.29456-0.95084 0.86299-0.95084 1.602v1.0594c0 0.9095-0.29972 1.5451-1.0439 1.7932z" stroke-width=".26458"/>
-                        </g>
-                    </g>
-                </svg>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse d-flex justify-content-center pr-5 mr-5 " id="collapsibleNavbar">
-                    <ul class="navbar-nav ">
-                        <li class="nav-item">
-                            <a class="nav-link " href="../mainBlog.html">Blog Post</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="../newsletter.html">Newsletter</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="../user.html">Profile</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="../login.html">Login</a>
-                        </li>
-                    </ul>
+                    </svg>
                 </div>
-                <div>
-                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                    @if (Route::has('register'))
-                        <div class="dropdown-menu">
-                            <!-- Dropdown menu links -->
-                            <a href="{{ route('register') }}">Register1</a>
+                <div class="flex-grow-1 bg-info">
+                    <nav class="container w-25">
+                        <div class="d-flex justify-content-around">
+                            <div>News</div>
+                            <div>Blogs</div>
+                            <div>Register</div>
+                            <div>Newsletter</div>
                         </div>
-                    @endif
-                    @if (Route::has('login'))
-                        @auth
-                            <button type="button" class="btn btn-secondary">
-                                <a href="{{ url('/dashboard') }}">Dashboard</a>
-                            </button>
-                        @else
-                            <button type="button" class="btn btn-secondary">
-                                <a href="{{ route('login') }}">Log in</a>
-                            </button>
-                        @endauth
-                    @endif
+                    </nav>
                 </div>
-            </nav>
-        </header>
+                <div class="flex-grow-2">
+                    <div class="dropdown pr-2" >
 
-        <main class="w-100">
-        <div class="row w-100">
-            <div class="leftdiv col-sm-2 p-0">
-            @yield("left")
+
+<!-- Split dropleft button -->
+<div class="btn-group">
+
+
+    <div class="btn-group dropleft" role="group">
+
+
+
+        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        </button>
+
+        @if (Route::has('register'))
+
+            <div class="dropdown-menu">
+                <!-- Dropdown menu links -->
+                <a href="{{ route('register') }}">Register1</a>
             </div>
         <div class="maindiv col-sm-8 p-0">
             @yield("main")
