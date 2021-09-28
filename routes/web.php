@@ -26,7 +26,8 @@ Route::get('/dashboard', function () {
 
 Route::get('/profile', 'UserController@index')->middleware(['auth'])->name('dashboard');
 
-Route::get('/profile/edit', 'UserController@edit')->middleware(['auth'])->name('dashboard');
+
+Route::get('/editProfile', 'UserController@edit')->middleware(['auth'])->name('dashboard');
 
 
 
