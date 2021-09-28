@@ -12,8 +12,7 @@
   <div class="profilewindow">
 
   </div>
-@extends('master')
-
+  
 @section('pageTitle', 'Profile')
 
 @section('main')

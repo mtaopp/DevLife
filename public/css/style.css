@@ -6129,15 +6129,23 @@ readers do not read off random characters that represent icons */
   box-sizing: content-box;
 }
 
+#navbar {
+  background-color: black;
+}
+#navbar a {
+  color: #c7bb8f;
+  text-decoration: none;
+}
+
 html body {
-  background-color: hex(f3f3f3);
+  background-color: #f3f3f3;
 }
 
 footer {
   text-align: center;
   display: flex;
-  background-color: #929292;
-  color: white;
+  background-color: black;
+  color: #c7bb8f;
 }
 
 .footdiv {
@@ -6148,9 +6156,49 @@ footer {
 
 .maindiv {
   min-height: 100vh;
-  background-color: gray;
+  background-color: #adb1b5;
 }
 
 .navbar {
   background-color: #555555;
+}
+
+#letterD {
+  stroke: #c7bb8f;
+}
+
+#letterE {
+  stroke: #c7bb8f;
+}
+
+#letterV {
+  stroke: #c7bb8f;
+}
+
+#letterSlash {
+  stroke: #c7bb8f;
+}
+
+#letterL {
+  stroke: #c7bb8f;
+}
+
+#letterI {
+  stroke: #c7bb8f;
+}
+
+#letterF {
+  stroke: #c7bb8f;
+}
+
+#letterE2 {
+  stroke: #c7bb8f;
+}
+
+#curlyOpen {
+  stroke: #c7bb8f;
+}
+
+#curlyClose {
+  stroke: #c7bb8f;
 }
