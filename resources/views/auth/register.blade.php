@@ -14,10 +14,25 @@
 
             <!-- Name -->
             <div>
-                <x-label for="name" :value="__('Name')" />
+                <x-label for="firstname" :value="__('First Name')" />
 
-                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
+                <x-input id="firstname" class="block mt-1 w-full" type="text" name="firstname" :value="old('firstname')" required autofocus />
             </div>
+
+            
+            <div>
+                <x-label for="lastname" :value="__('Last Name')" />
+
+                <x-input id="lastname" class="block mt-1 w-full" type="text" name="lastname" :value="old('lastname')" required autofocus />
+            </div>
+
+
+            <div>
+                <x-label for="username" :value="__('Username')" />
+
+                <x-input id="username" class="block mt-1 w-full" type="text" name="username" :value="old('username')" required autofocus />
+            </div>
+
 
             <!-- Email Address -->
             <div class="mt-4">
@@ -25,6 +40,7 @@
 
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
             </div>
+
 
             <!-- Password -->
             <div class="mt-4">
@@ -35,6 +51,7 @@
                                 name="password"
                                 required autocomplete="new-password" />
             </div>
+
 
             <!-- Confirm Password -->
             <div class="mt-4">
