@@ -34,3 +34,5 @@ Route::get('/home', function() {
 Route::get('/article', function() {
   return view('post');
 });
+
+Route::post('/storeProfile', 'UserController@store')->middleware(['auth'])->name('dashboard');
