@@ -6134,8 +6134,109 @@ readers do not read off random characters that represent icons */
   text-decoration: none;
 }
 
+#navbar a {
+  color: #c7bb8f;
+  text-decoration: none;
+}
+
 .dashboard {
   width: 15vh;
+}
+
+html body {
+  background-color: #dcd2ad;
+}
+
+.maindiv {
+  min-height: 100vh;
+  background-color: #afafaf;
+}
+
+footer {
+  background-color: black;
+  color: #c7bb8f;
+  flex-direction: column;
+}
+
+.footdiv-icon {
+  height: 1vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 7vh;
+  padding-right: 7vh;
+  font-size: 5vh;
+}
+
+.footdiv {
+  height: 1vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer-icon1, #footer-icon2, #footer-icon3, #footer-icon4 {
+  color: #c7bb8f;
+}
+
+#letterD, #letterE, #letterV, #letterSlash, #letterL, #letterI, #letterF, #letterE2, #curlyOpen, #curlyClose {
+  stroke: #c7bb8f;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #c7bb8f;
+}
+
+#navbar-link a {
+  color: #000000;
+  text-decoration: none;
+}
+
+#navbar a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.dashboard {
+  width: 15vh;
+}
+
+html body {
+  background-color: #d0d7dd;
+}
+
+.maindiv {
+  min-height: 100vh;
+  background-color: #d0d7dd;
+}
+
+footer {
+  background-color: #c7bb8f;
+  color: #000000;
+  flex-direction: column;
+}
+
+.footdiv-icon {
+  height: 1vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 7vh;
+  padding-right: 7vh;
+  font-size: 5vh;
+}
+
+.footdiv {
+  height: 1vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer-icon1, #footer-icon2, #footer-icon3, #footer-icon4 {
+  color: #000000;
 }
 
 * {
@@ -6144,82 +6245,11 @@ readers do not read off random characters that represent icons */
   box-sizing: content-box;
 }
 
-#navbar {
-  background-color: black;
-}
-#navbar a {
-  color: #c7bb8f;
-  text-decoration: none;
-}
-
-html body {
-  background-color: #f3f3f3;
-}
-
-footer {
-  text-align: center;
-  display: flex;
-  background-color: black;
-  color: #c7bb8f;
-  justify-content: center;
-}
-
-.footdiv {
-  flex: 1;
-  height: 60px;
-  padding: 50px;
-}
-
-.maindiv {
-  min-height: 100vh;
-  background-color: #adb1b5;
-}
-
 .bttimg {
   border-radius: 50%;
   position: fixed;
   bottom: 20px;
   right: 20px;
-}
-
-#letterD {
-  stroke: #c7bb8f;
-}
-
-#letterE {
-  stroke: #c7bb8f;
-}
-
-#letterV {
-  stroke: #c7bb8f;
-}
-
-#letterSlash {
-  stroke: #c7bb8f;
-}
-
-#letterL {
-  stroke: #c7bb8f;
-}
-
-#letterI {
-  stroke: #c7bb8f;
-}
-
-#letterF {
-  stroke: #c7bb8f;
-}
-
-#letterE2 {
-  stroke: #c7bb8f;
-}
-
-#curlyOpen {
-  stroke: #c7bb8f;
-}
-
-#curlyClose {
-  stroke: #c7bb8f;
 }
 
 @media (max-width: 700px) {
@@ -6231,46 +6261,6 @@ footer {
     display: none;
   }
 }
-#letterD {
-  stroke: #c7bb8f;
-}
-
-#letterE {
-  stroke: #c7bb8f;
-}
-
-#letterV {
-  stroke: #c7bb8f;
-}
-
-#letterSlash {
-  stroke: #c7bb8f;
-}
-
-#letterL {
-  stroke: #c7bb8f;
-}
-
-#letterI {
-  stroke: #c7bb8f;
-}
-
-#letterF {
-  stroke: #c7bb8f;
-}
-
-#letterE2 {
-  stroke: #c7bb8f;
-}
-
-#curlyOpen {
-  stroke: #c7bb8f;
-}
-
-#curlyClose {
-  stroke: #c7bb8f;
-}
-
 @media (max-width: 700px) {
   .leftdiv {
     display: none;

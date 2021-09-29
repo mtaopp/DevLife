@@ -43,7 +43,7 @@
                 <div class="collapse navbar-collapse d-flex justify-content-center pr-5 mr-5 " id="collapsibleNavbar">
                     <ul class="navbar-nav ">
                         <li class="nav-item">
-                            <a class="nav-link " href="../mainBlog.html">Blog Post</a>
+                            <a class="nav-link " href="mainBlog.blade.php">Blog Post</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="../newsletter.html">Newsletter</a>
@@ -92,19 +92,36 @@
             </div>
         </div>
         </main>
-        <footer id="footer" class="container-fluid text-center p-0 w-100">
-            <div id="copyright" class="footdiv">
-                <p>Copyright</p>
+        <footer class="container-fluid text-center p-0 w-100">
+          <div id="footer" class="container-fluid d-flex justify-content-center text-center p-0 w-100">
+            <div id="footer-icon1" class="footdiv-icon">
+              <i class="fab fa-linkedin"></i> 
             </div>
-            <div id="socialmedia" class="footdiv">
-                <p>Social Media</p>
+            <div id="footer-icon2" class="footdiv-icon">
+              <i class="fab fa-stack-overflow"></i>
             </div>
-            <div id="Terms of Service" class="footdiv">
-                <p>ToS</p>
+            <div id="footer-icon3" class="footdiv-icon">
+              <i class="fab fa-instagram-square"></i>
             </div>
+            <div id="footer-icon4" class="footdiv-icon">
+              <i class="fab fa-reddit-square"></i>
+            </div>
+          </div> 
+          <div class=" container-fluid p-0 w-100 d-flex justify-content-around">
             <div id="Newsletter" class="footdiv">
-                <p>newsletter</p>
-            </div>
+              <p>Newsletter</p>
+              </div>
+              <div id="ToS" class="footdiv">
+                <p>Term of Service</p>
+              </div>
+              <div id="About us" class="footdiv">
+                <p>About us</p>
+              </div>
+              <div id="More Link" class="footdiv">
+                  <p>More Link</p>
+              </div>
+            </div>           
+          </div>
         </footer>
     </body>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
