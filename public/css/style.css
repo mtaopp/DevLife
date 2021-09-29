@@ -6161,6 +6161,7 @@ footer {
   display: flex;
   background-color: black;
   color: #c7bb8f;
+  justify-content: center;
 }
 
 .footdiv {
@@ -6230,7 +6231,6 @@ footer {
     display: none;
   }
 }
-
 #letterD {
   stroke: #c7bb8f;
 }
