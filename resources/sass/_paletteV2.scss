@@ -7,72 +7,72 @@ $color5: #f3f3f3;
 //navbar-entry
 
 #letterD,#letterE,#letterV,#letterSlash,#letterL,#letterI,#letterF,#letterE2,#curlyOpen,#curlyClose{
-    stroke: $color1;
-  }
+  stroke: $color1;
+}
 .navbar{
-    display: flex;
-    justify-content: space-between;
-    background-color:$color1;
-    
-  }
+  display: flex;
+  justify-content: space-between;
+  background-color:$color1;
+  
+}
 
-  #navbar-link{
-    a{
-      color:$color3;
-      text-decoration: none;
-    }
+#navbar-link{
+  a{
+    color:$color3;
+    text-decoration: none;
   }
+}
 
-  #navbar{
-    a{
-      color:$color3;
-      text-decoration: none;
-    }
+#navbar{
+  a{
+    color:$color3;
+    text-decoration: none;
   }
+}
 
 .dashboard{
-    width: 15vh;
+  width: 15vh;
 }
 //navbar-end
 //body-entry
 html{
-    body{
-        background-color:$color2;
-    }
+  body{
+      background-color:$color2;
+  }
 }
 
 .maindiv{
-    min-height:100vh;
-    background-color:$color2;
-  }
+  min-height:100vh;
+  background-color:$color2;
+}
 //body-end
 //footer-entry
-  footer {
-    background-color: $color1;
-    color: $color3;
-    flex-direction: column;
-  }
+footer {
+  background-color: $color1;
+  color: $color3;
+  flex-direction: column;
+}
+
+.footdiv-icon{
+  height:1vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 7vh;
+  padding-right: 7vh;
+  font-size: 5vh;
+}
+.footdiv{
+  height:1vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  display: flex;
+  justify-content: space-around;
   
-  .footdiv-icon{
-    height:1vh;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    padding-left: 7vh;
-    padding-right: 7vh;
-    font-size: 5vh;
-  }
-  .footdiv{
-    height:1vh;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    display: flex;
-    justify-content: space-around;
-    
-    
-  }
   
-  #footer-icon1,#footer-icon2,#footer-icon3,#footer-icon4{
-    color: $color3;
-  }
-  
+}
+
+#footer-icon1,#footer-icon2,#footer-icon3,#footer-icon4{
+  color: $color3;
+}
+
 //footer-end
