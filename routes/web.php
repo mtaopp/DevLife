@@ -28,7 +28,7 @@ Route::get('/editProfile', 'UserController@edit')->middleware(['auth'])->name('d
 require __DIR__.'/auth.php';
 
 Route::get('/home', function() {
-    return view('home');
+    return view('mainBlog');
 });
 
 Route::get('/article', function() {

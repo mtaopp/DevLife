@@ -6152,6 +6152,25 @@ html body {
   background-color: #afafaf;
 }
 
+.entryImage {
+  width: 50vh;
+  height: 35vh;
+  padding-right: 10px;
+}
+
+.entryContent {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.entryGallerie {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  grid-row: 1/3;
+}
+
 footer {
   background-color: black;
   color: #c7bb8f;

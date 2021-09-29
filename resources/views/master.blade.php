@@ -9,8 +9,9 @@
             <title>DevLifeStyle | @yield('pageTitle')</title>
     </head>
     <body class="w-100">
-        <header class="w-100">
-            <nav class="navbar navbar-expand-sm" id="navbar">
+      <header class="w-100">
+        <nav class="navbar navbar-expand-sm" id="navbar">
+        <a href="home">
                 <svg width="70.705mm" height="45.046mm" version="1.1" viewBox="0 0 59.705 26.046" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
                     <g transform="translate(-50.259 -104.98)" stroke-width=".26458">
                         <g transform="matrix(2.3015 0 0 2.5702 -43.012 -121.93)" aria-label="{">
@@ -37,13 +38,14 @@
                         </g>
                     </g>
                 </svg>
+              </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse d-flex justify-content-center pr-5 mr-5 " id="collapsibleNavbar">
                     <ul class="navbar-nav ">
                         <li class="nav-item">
-                            <a class="nav-link " href="mainBlog.blade.php">Blog Post</a>
+                            <a class="nav-link " href="home">Blog Post</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="../newsletter.html">Newsletter</a>
@@ -57,9 +59,9 @@
                     </ul>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                    @if (Route::has('register'))
-                        <div class="dropdown-menu">
+                  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                  @if (Route::has('register'))
+                  <div class="dropdown-menu ">
                             <!-- Dropdown menu links -->
                             <a href="{{ route('register') }}">Register1</a>
                         </div>
