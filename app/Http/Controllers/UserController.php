@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
@@ -37,9 +38,26 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        echo "hello";
-    }
+        {
+            $request->validate([
+                'firstname' => ['required', 'string', 'max:30'],
+                'lastname' => ['required', 'string', 'max:40'],
+                'username' => ['required', 'string', 'max:30', 'unique:users'],
+                'email' => ['required', 'string', 'email', 'max:50', 'unique:users'],
+            ]);
+
+            $user = Auth::user();
+
+            $user->firstname = $request->firstname;
+            $user->lastname = $request->lastname;
+            $user->username = $request->username;
+            $user->email = $request->email;
+
+            echo '<pre>';
+            var_dump($user);
+            //var_dump($request->all());
+            echo '</pre>';
+        }
 
     /**
      * Display the specified resource.

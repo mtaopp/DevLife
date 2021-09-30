@@ -12,22 +12,22 @@
   </div>
 
 @section('pageTitle', 'Profile')
-@section('main')
-<h2>Welcome {{$firstname}} {{$lastname}} </h2>
 
-Username: {{$username}}
+    <h2>Welcome {{$firstname}} {{$lastname}} </h2>
 
-@endsection
-<div class="profilewindow">
-  {{ $username }}
-  <br>
-  {{ $firstname }}
-  <br>
-  {{ $lastname }}
-  <br>
-  {{ $email }}
-  <br>
-  {{ $id }}
-</div>
+    Username: {{$username}}
+
+    <div class="profilewindow">
+    {{ $username }}
+    <br>
+    {{ $firstname }}
+    <br>
+    {{ $lastname }}
+    <br>
+    {{ $email }}
+    <br>
+    {{ $id }}
+    </div>
+    <a class="btn" href="/editProfile"><i class="fas fa-user-edit"></i></a>
 @endsection
 
