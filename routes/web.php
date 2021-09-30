@@ -21,9 +21,6 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/profile', 'UserController@index')->middleware(['auth'])->name('dashboard');
-
-Route::get('/editProfile', 'UserController@edit')->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
 
@@ -32,5 +29,12 @@ Route::get('/home', function() {
 });
 
 Route::get('/article', function() {
-  return view('post');
+    return view('post');
 });
+
+
+Route::get('/profile', 'UserController@index')->middleware(['auth'])->name('dashboard');
+
+Route::get('/editProfile', 'UserController@edit')->middleware(['auth'])->name('dashboard');
+
+Route::post('/storeProfile', 'UserController@store')->middleware(['auth'])->name('dashboard');
