@@ -4,16 +4,16 @@
 <div class="entryTitle">
       <main role="main" class="entryTitle">
         <section>
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleControls" class="carousel slide align-center" data-ride="carousel" align="center">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="../images/yogaMan.jpg" class="d-block" alt="...">
+              <img src="../images/codingOne.jpg" class="d-block" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="../images/eatingChips.jpg" class="d-block" alt="...">
+              <img src="../images/devPersonOne.jpg" class="d-block" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="../images/subaruduckdance.gif" class="d-block" alt="...">
+              <img src="../images/sportsTool.jpg" class="d-block" alt="...">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -26,7 +26,7 @@
           </a>
           </div>
         </section>
-        <hr>
+        <br>
         <section >
           <div class="entryTitle">
               <h2>A little Stretching</h2>

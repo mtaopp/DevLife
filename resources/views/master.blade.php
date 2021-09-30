@@ -87,7 +87,7 @@
             @yield("left")
             </div>
 
-        <div class="maindiv col-sm-8 p-5">
+        <div class="maindiv col-sm-8">
             
             @yield("main")
         </div>

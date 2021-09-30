@@ -6127,6 +6127,8 @@ readers do not read off random characters that represent icons */
   display: flex;
   justify-content: space-between;
   background-color: black;
+  font-size: 2.5vh;
+  padding: 10px;
 }
 
 #navbar-link a {
@@ -6139,6 +6141,10 @@ readers do not read off random characters that represent icons */
   text-decoration: none;
 }
 
+.nav-item {
+  padding: 10px;
+}
+
 .dashboard {
   width: 15vh;
 }
@@ -6147,9 +6153,14 @@ html body {
   background-color: #dcd2ad;
 }
 
+.carousel {
+  background-color: #c0c6cc;
+}
+
 .maindiv {
   min-height: 100vh;
   background-color: #afafaf;
+  padding-top: 0;
 }
 
 .entryImage {
