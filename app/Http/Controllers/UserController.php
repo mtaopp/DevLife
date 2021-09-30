@@ -38,7 +38,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        echo "hello";
     }
 
     /**
@@ -58,9 +58,10 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit(User $user)
+    public function edit()
     {
-        //
+        $user = Auth::user();
+        return view('editProfile', $user);
     }
 
     /**
