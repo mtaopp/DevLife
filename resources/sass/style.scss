@@ -5,47 +5,13 @@
 @import 'navbar';
 @import 'main';
 @import 'footer';
+@import 'paletteV2';//there is the more paletteV1-V4
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: content-box;
 }
-
-
-#navbar{
-  background-color:black;
-  a{
-    color:#c7bb8f;
-    text-decoration: none;
-  }
-}
-
-html{
-    body{
-        background-color:#f3f3f3;
-    }
-}
-footer {
-  text-align: center;
-  display:flex;
-  background-color: rgb(0, 0, 0);
-  color: #c7bb8f;
-  justify-content: center;
-}
-
-.footdiv{
-  flex:1;
-  height:60px;
-  padding:50px;
-}
-
-.maindiv{
-  min-height:100vh;
-  background-color:#adb1b5;
-}
-
-
 
 .bttimg{
   border-radius: 50%;
@@ -54,36 +20,6 @@ footer {
   right:20px;
 }
 
-#letterD{
-  stroke: #c7bb8f;
-}
-#letterE{
-  stroke: #c7bb8f;
-}
-#letterV{
-  stroke: #c7bb8f;
-}
-#letterSlash{
-  stroke: #c7bb8f;
-}
-#letterL{
-  stroke: #c7bb8f;
-}
-#letterI{
-  stroke: #c7bb8f;
-}
-#letterF{
-  stroke: #c7bb8f;
-}
-#letterE2{
-  stroke: #c7bb8f;
-}
-#curlyOpen{
-  stroke: #c7bb8f;
-}
-#curlyClose{
-  stroke: #c7bb8f;
-}
 
 @media (max-width: 700px) {
   .leftdiv{
@@ -95,36 +31,8 @@ footer {
 
 }
 
-#letterD{
-  stroke: #c7bb8f;
-}
-#letterE{
-  stroke: #c7bb8f;
-}
-#letterV{
-  stroke: #c7bb8f;
-}
-#letterSlash{
-  stroke: #c7bb8f;
-}
-#letterL{
-  stroke: #c7bb8f;
-}
-#letterI{
-  stroke: #c7bb8f;
-}
-#letterF{
-  stroke: #c7bb8f;
-}
-#letterE2{
-  stroke: #c7bb8f;
-}
-#curlyOpen{
-  stroke: #c7bb8f;
-}
-#curlyClose{
-  stroke: #c7bb8f;
-}
+
+
 
 @media (max-width: 700px) {
   .leftdiv{
