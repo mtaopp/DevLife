@@ -1,7 +1,7 @@
 
-$color1: #dcd2ad;
+$color1: #f1e9ca;
 $color2: #e2e2e2;
-$color3: #313131;
+$color3: #535353;
 $color4: #afafaf;
 $color5: #ebebc6;
 //navbar-entry
@@ -42,6 +42,10 @@ html{
   min-height:100vh;
   background-color:$color1;
 }
+.card{
+  background-color: $color4;
+}
+
 //body-end
 //footer-entry
 footer {

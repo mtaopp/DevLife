@@ -51,7 +51,7 @@
                             <a class="nav-link " href="../newsletter.html">Newsletter</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="../user.html">Profile</a>
+                            <a class="nav-link " href="profile">Profile</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="../login.html">Login</a>
@@ -86,7 +86,9 @@
             <div class="leftdiv col-sm-2 p-0">
             @yield("left")
             </div>
-        <div class="maindiv col-sm-8 p-0">
+
+        <div class="maindiv col-sm-8 p-5">
+            
             @yield("main")
         </div>
             <div class="rightdiv col-sm-2 p-0">

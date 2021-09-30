@@ -5,12 +5,12 @@
 @import 'navbar';
 @import 'main';
 @import 'footer';
+@import 'profile';
 @import 'colorpalette/paletteV2';//there is the more paletteV1-V4
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
 }
 .bttimg{
   border-radius: 50%;
