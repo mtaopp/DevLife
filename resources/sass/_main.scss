@@ -28,17 +28,19 @@ html{
     width: 50vh;
     height: 35vh;
     padding-right: 10px;
+    float: left;
 
 
 }
 .entryContent{
-    padding: 10px;
+    margin-top: 2vh;
+    padding: 0;
     display: flex;
     justify-content: space-between;
 }
-.entryTitle{
+// .entryTitle{
 
-}
+// }
 .entryGallerie{
     display: flex;
     flex-wrap: wrap;
@@ -48,6 +50,9 @@ html{
     width: 300px;
     height: 200px;
     align-items: center;
+    padding: auto;
+    margin-right: 5vh;
+    margin-left: 5vh;
 }
 .carousel-item{
 align-items: center;
