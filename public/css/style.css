@@ -6123,12 +6123,16 @@ readers do not read off random characters that represent icons */
   width: auto;
 }
 
+svg {
+  margin-right: 8.3vh;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   background-color: black;
-  font-size: 2.5vh;
-  padding: 10px;
+  font-size: 2vh;
+  padding: 1vh;
 }
 
 #navbar-link a {
@@ -6142,7 +6146,7 @@ readers do not read off random characters that represent icons */
 }
 
 .nav-item {
-  padding: 10px;
+  padding: 1vh;
 }
 
 .dashboard {
@@ -6152,6 +6156,15 @@ readers do not read off random characters that represent icons */
 html body {
   background-color: #dcd2ad;
 }
+html .row {
+  margin-left: 0;
+}
+
+.loginButton {
+  margin-left: 10.5vh;
+  margin-right: 10.5vh;
+  border: block 0;
+}
 
 .carousel {
   background-color: #c0c6cc;
@@ -6160,7 +6173,7 @@ html body {
 .maindiv {
   min-height: 100vh;
   background-color: #afafaf;
-  padding-top: 0;
+  padding: 0;
 }
 
 .entryImage {
