@@ -81,7 +81,33 @@ Route::get('/profile', [UserController::class, 'show'])
     ->middleware('auth')
     ->name('profile');
 
-    Route::get('/articles', [ArticleController::class, 'showAll'])
+Route::get('/profileEdit', [UserController::class, 'edit'])
+    ->middleware('auth')
+    ->name('profileEdit');
+
+Route::post('/profileUpdate', [UserController::class, 'update'])
+    ->middleware('auth')
+    ->name('profileUpdate');
+
+    
+    
+Route::get('/changePassword', [UserController::class, 'changePassword'])
+    ->middleware('auth')
+    ->name('changePassword');
+
+
+Route::post('/storePassword', [UserController::class, 'storePassword'])
+    ->middleware('auth')
+    ->name('storePassword');
+
+Route::post('/changeImage', [UserController::class, 'changeImage'])
+    ->middleware('auth')
+    ->name('changeImage');
+
+
+
+
+Route::get('/articles', [ArticleController::class, 'showAll'])
     ->name('articles');
 
 Route::get('/newsletter', function() {

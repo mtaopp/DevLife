@@ -11,17 +11,22 @@
             </button>
             <div class="collapse navbar-collapse d-flex justify-content-center " id="collapsibleNavbar">
                 <ul class="navbar-nav ">
-                    <li class="nav-item">
-                        <a class="nav-link " href="{{ route('dashboard') }}">Home</a>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link text-center align-self-center" href="{{ route('dashboard') }}">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="{{ route('articles') }}">Articles</a>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link text-center align-self-center" href="{{ route('articles') }}">Articles</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="{{ route('newsletter') }}">Newsletter</a>
+                    @if (Auth::check())
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link text-center" href="{{-- {{ route('createArticle') }} --}}">Create new<br>Article</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="../newsletter.html">About</a>
+                    @endif
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link text-center align-self-center" href="{{ route('newsletter') }}">Newsletter</a>
+                    </li>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link text-center align-self-center" href="{{ route('newsletter') }}">About</a>
                     </li>
                 </ul>
             </div>

@@ -6242,9 +6242,6 @@ footer {
 }
 
 .userImage {
-  font-size: 10vh;
-  display: flex;
-  justify-content: flex-start;
   padding: 2vh;
 }
 
