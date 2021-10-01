@@ -18,6 +18,8 @@ class Article extends Model
         'title',
         'description',
         'category',
+        'author',
+
 
     ];
 }

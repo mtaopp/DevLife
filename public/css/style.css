@@ -6123,10 +6123,6 @@ readers do not read off random characters that represent icons */
   width: auto;
 }
 
-svg {
-  margin-right: 8.3vh;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;

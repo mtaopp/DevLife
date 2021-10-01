@@ -18,9 +18,9 @@ class UserController extends Controller
     public function show(User $user)
     {
         $user = Auth::user();
+        die();
 
-
-        return view('profile', $user);
+        //return view('profile', $user);
         //return redirect(RouteServiceProvider::HOME);
     }
 

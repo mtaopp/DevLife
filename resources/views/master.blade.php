@@ -11,7 +11,7 @@
     <body class="w-100">
       <header class="w-100">
         <nav class="navbar navbar-expand-sm" id="navbar">
-        <a href="home">
+        <a href="/">
                 <svg width="60.705mm" height="35.046mm" version="1.1" viewBox="0 0 59.705 26.046" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
                     <g transform="translate(-50.259 -104.98)" stroke-width=".26458">
                         <g transform="matrix(2.3015 0 0 2.5702 -43.012 -121.93)" aria-label="{">
@@ -69,7 +69,7 @@
                     @if (Route::has('login'))
                         @auth
                             <button type="button" class="btn btn-secondary">
-                                <a href="{{ url('/dashboard') }}">Dashboard</a>
+                                <a href="{{ url('/') }}">Dashboard</a>
                             </button>
                         @else
                             <button type="button" class="btn btn-secondary">
@@ -97,7 +97,7 @@
         <footer class="container-fluid text-center p-0 w-100">
           <div id="footer" class="container-fluid d-flex justify-content-center text-center p-0 w-100">
             <div id="footer-icon1" class="footdiv-icon">
-              <i class="fab fa-linkedin"></i> 
+              <i class="fab fa-linkedin"></i>
             </div>
             <div id="footer-icon2" class="footdiv-icon">
               <i class="fab fa-stack-overflow"></i>
@@ -108,7 +108,7 @@
             <div id="footer-icon4" class="footdiv-icon">
               <i class="fab fa-reddit-square"></i>
             </div>
-          </div> 
+          </div>
           <div class=" container-fluid p-0 w-100 d-flex justify-content-around">
             <div id="Newsletter" class="footdiv">
               <p>Newsletter</p>
@@ -122,7 +122,7 @@
               <div id="More Link" class="footdiv">
                   <p>More Link</p>
               </div>
-            </div>           
+            </div>
           </div>
         </footer>
     </body>
