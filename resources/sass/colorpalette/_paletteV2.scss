@@ -1,11 +1,12 @@
-
+// RGBA color palette (alpha channel for opacity)
 $color1: rgba(199,187,143,1);
 $color2: rgba(208,215,221,1);
 $color3: rgba(0, 0, 0, 1);
 $color4: rgba(236, 238, 226, 1);
 $color5: rgba(243, 243, 243, 1);
-//navbar-entry
 
+
+//navbar-entry
 #letterD,#letterE,#letterV,#letterSlash,#letterL,#letterI,#letterF,#letterE2,#curlyOpen,#curlyClose{
   stroke: $color1;
 }
