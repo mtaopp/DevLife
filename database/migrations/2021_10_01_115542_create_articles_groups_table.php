@@ -15,7 +15,7 @@ class CreateArticlesGroupsTable extends Migration
     {
         Schema::create('articles_groups', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->unique();
             $table->timestamps();
         });
     }

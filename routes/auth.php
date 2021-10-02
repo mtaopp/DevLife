@@ -89,8 +89,21 @@ Route::post('/profileUpdate', [UserController::class, 'update'])
     ->middleware('auth')
     ->name('profileUpdate');
 
-    
-    
+
+
+Route::get('/createArticle', [ArticleController::class, 'createArticle'])
+    ->middleware('auth')
+    ->name('createArticle');
+
+Route::get('/createCategory', [ArticleController::class, 'createCategory'])
+    ->middleware('auth')
+    ->name('createCategory');
+
+Route::post('/storeCategory', [ArticleController::class, 'storeCategory'])
+    ->middleware('auth')
+    ->name('storeCategory');
+
+
 Route::get('/changePassword', [UserController::class, 'changePassword'])
     ->middleware('auth')
     ->name('changePassword');
@@ -107,10 +120,9 @@ Route::post('/changeImage', [UserController::class, 'changeImage'])
 
 
 
-Route::get('/articles', [ArticleController::class, 'showAll'])
+Route::get('/articles', [ArticleController::class, 'showAllArticles'])
     ->name('articles');
 
 Route::get('/newsletter', function() {
     return view('newsletter');
-})
-    ->name('newsletter');
+})->name('newsletter');

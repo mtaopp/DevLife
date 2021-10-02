@@ -38,15 +38,15 @@ class UserController extends Controller
 
     public function storePassword(Request $request)
     {
-        
+
         // $request->validate([
         //     'current_password' => ['required', new MatchOldPassword],
         //     'new_password' => ['required'],
         //     'new_confirm_password' => ['same:new_password'],
         // ]);
-   
+
         // User::find(auth()->user()->id)->update(['password'=> Hash::make($request->new_password)]);
-   
+
         // dd('Password change successfully.');
     }
 
@@ -89,7 +89,7 @@ class UserController extends Controller
         //     'email' => ['required', 'string', 'email', 'max:50', 'unique:users'],
         // ]);
         // die();
-        // $user = Auth::user();
+        //
         // echo $user;
         // $user->firstname = $request->firstname;
         // $user->lastname = $request->lastname;
@@ -99,6 +99,11 @@ class UserController extends Controller
         // var_dump($user);
         // //var_dump($request->all());
         // echo '</pre>';
+
+
+
+        $user = Auth::user();
+        return view('profile', $user);
     }
 
 

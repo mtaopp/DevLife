@@ -3,7 +3,7 @@
         <div id="login-logo" class="d-flex flex-column-container">
         <x-slot name="logo">
                 <div>
-                    <x-application-logo class="d-flex justify-content-center"/>
+                    {{-- <x-application-logo class="d-flex justify-content-center"/> --}}
                 </div>
         </x-slot>
 

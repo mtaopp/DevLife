@@ -19,7 +19,7 @@
                     </li>
                     @if (Auth::check())
                     <li class="nav-item align-self-center">
-                        <a class="nav-link text-center" href="{{-- {{ route('createArticle') }} --}}">Create new<br>Article</a>
+                        <a class="nav-link text-center" href="{{ route('createArticle') }}">Create new<br>Article</a>
                     </li>
                     @endif
                     <li class="nav-item align-self-center">
