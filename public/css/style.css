@@ -6257,12 +6257,12 @@ footer {
 }
 
 #navbar-link a {
-  color: #000000;
+  color: black;
   text-decoration: none;
 }
 
 #navbar a {
-  color: #000000;
+  color: black;
   text-decoration: none;
 }
 
@@ -6286,7 +6286,7 @@ html body {
 
 footer {
   background-color: #c7bb8f;
-  color: #000000;
+  color: black;
   flex-direction: column;
   background: #c7bb8f;
   background: linear-gradient(90deg, #d0d7dd 0%, #d0d7dd 5%, #c7bb8f 22%, #c7bb8f 78%, #d0d7dd 95%, #d0d7dd 100%);
@@ -6310,7 +6310,7 @@ footer {
 }
 
 #footer-icon1, #footer-icon2, #footer-icon3, #footer-icon4 {
-  color: #000000;
+  color: black;
 }
 
 * {
