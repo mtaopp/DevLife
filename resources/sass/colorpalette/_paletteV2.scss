@@ -59,8 +59,8 @@ footer {
   background-color: $color1;
   color: $color3;
   flex-direction: column;
-  background: rgb(199,187,143);
-  background: linear-gradient(90deg, rgba(208,215,221,1) 0%, rgba(208,215,221,1) 5%, rgba(199,187,143,1) 22%, rgba(199,187,143,1) 78%, rgba(208,215,221,1) 95%, rgba(208,215,221,1) 100%);
+  background: $color1;
+  background: linear-gradient(90deg, $color2 0%, $color2 5%, $color1 22%, $color1 78%, $color2 95%, $color2 100%);
 
 }
 
