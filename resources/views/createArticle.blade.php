@@ -8,15 +8,16 @@
                 <div class="userInformation w-100">
 
                     <div class="row w-100">
+                    @if (isset($msg))
+                        <div class="row w-100">{{ $msg }}</div>
+                     @endif
                         <div class="row w-100 m-5">
                             <h1>Create a new article</h1>
                             <a href="{{ route('createCategory') }}">Create a new Category</a>
                         </div>
 
                         <section class="d-flex">
-                            @if (isset($msg))
-                               <div class="row w-100">{{ $msg }}</div>
-                            @endif
+
 
                                 <form method="POST" action= "{{ route('profileUpdate') }}">
                                     @csrf
@@ -29,8 +30,7 @@
                                             <label class="my-2" for="category">Category</label>
                                             <select class="my-1">
                                                 @foreach($categories as $category)
-                                                    Diese Funktion ist noch nicht gebaut
-                                                    <option value="">{{ $category->name }}</option>
+                                                    <option value="{{ $category->id }}">{{ $category->name }}</option>
                                                 @endforeach
                                             </select>
                                         </div>

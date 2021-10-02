@@ -51,6 +51,7 @@ class ArticleController extends Controller
         $data = [
             'id' => Auth::user()->id,
             'msg' => 'Category has been created',
+            'categories' => $this->showAllCategories(),
         ];
 
         return view('createArticle')->with($data);

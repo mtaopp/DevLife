@@ -6252,7 +6252,8 @@ footer {
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: #c7bb8f;
+  background: #c7bb8f;
+  background: linear-gradient(90deg, #d0d7dd 0%, #d0d7dd 5%, #c7bb8f 22%, #c7bb8f 78%, #d0d7dd 95%, #d0d7dd 100%);
 }
 
 #navbar-link a {
@@ -6285,8 +6286,9 @@ html body {
 
 footer {
   background-color: #c7bb8f;
-  color: #000000;
   flex-direction: column;
+  background: #c7bb8f;
+  background: linear-gradient(90deg, #d0d7dd 0%, #d0d7dd 5%, #c7bb8f 22%, #c7bb8f 78%, #d0d7dd 95%, #d0d7dd 100%);
 }
 
 .footdiv-icon {

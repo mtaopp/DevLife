@@ -1,5 +1,5 @@
 
-$color1: #c7bb8f;
+$color1: rgba(199,187,143,1);
 $color2: #d0d7dd;
 $color3: #000000;
 $color4: #eceee2;
@@ -12,8 +12,12 @@ $color5: #f3f3f3;
 .navbar{
   display: flex;
   justify-content: space-between;
-  background-color:$color1;
-  
+  //background-color:$color1;
+  background: rgb(199,187,143);
+  //background: linear-gradient(90deg, rgba(199,187,143,1) 0%, rgba(199,187,143,1) 45%, rgba(0,0,0,1) 50%, rgba(199,187,143,1) 55%, rgba(199,187,143,1) 100%);
+  //background: linear-gradient(90deg, rgba(199,187,143,1) 0%, rgba(199,187,143,1) 45%, rgba(0,0,0,1) 50%, rgba(199,187,143,1) 55%, rgba(199,187,143,1) 100%);
+  background: linear-gradient(90deg, rgba(208,215,221,1) 0%, rgba(208,215,221,1) 5%, rgba(199,187,143,1) 22%, rgba(199,187,143,1) 78%, rgba(208,215,221,1) 95%, rgba(208,215,221,1) 100%);
+
 }
 
 #navbar-link{
@@ -53,8 +57,11 @@ html{
 //footer-entry
 footer {
   background-color: $color1;
-  color: $color3;
+  //color: $color3;
   flex-direction: column;
+  background: rgb(199,187,143);
+  background: linear-gradient(90deg, rgba(208,215,221,1) 0%, rgba(208,215,221,1) 5%, rgba(199,187,143,1) 22%, rgba(199,187,143,1) 78%, rgba(208,215,221,1) 95%, rgba(208,215,221,1) 100%);
+
 }
 
 .footdiv-icon{
@@ -71,8 +78,8 @@ footer {
   padding-bottom: 5vh;
   display: flex;
   justify-content: space-around;
-  
-  
+
+
 }
 
 #footer-icon1,#footer-icon2,#footer-icon3,#footer-icon4{
