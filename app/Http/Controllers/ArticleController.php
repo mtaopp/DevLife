@@ -41,10 +41,9 @@ class ArticleController extends Controller
         $id = Auth::user()->id;
 
         Article::create([
-            'title' => $request->title,
             'category' => $request->category,
-            'title' => $request->title,
             'author' => $id,
+            'title' => $request->title,
             'description' => $request->description,
             'content' => $request->content,
         ]);
