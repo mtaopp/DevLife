@@ -18,7 +18,7 @@ class CreateArticlesTable extends Migration
             $table->integer('category');
             $table->integer('author');
             $table->string('title');
-            $table->string('descripton');
+            $table->string('description');
             $table->string('image')->nullable();
             $table->string('content');
 

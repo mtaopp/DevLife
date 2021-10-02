@@ -19,16 +19,16 @@
                         <section class="d-flex">
 
 
-                                <form method="POST" action= "{{ route('profileUpdate') }}">
+                                <form method="POST" action= "{{ route('storeArticle') }}">
                                     @csrf
                                     <div class="row w-100">
                                         <div class="row w-100">
-                                            <label class="my-2" for="category">Category</label>
-                                            <input class="my-1" type="text" name="category" id="category">
+                                            <label class="my-2" for="title">Category</label>
+                                            <input class="my-1" type="text" name="title" id="title">
                                         </div>
                                         <div class="row w-100">
                                             <label class="my-2" for="category">Category</label>
-                                            <select class="my-1">
+                                            <select class="my-1" name="category" id="category" >
                                                 @foreach($categories as $category)
                                                     <option value="{{ $category->id }}">{{ $category->name }}</option>
                                                 @endforeach

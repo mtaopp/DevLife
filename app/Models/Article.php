@@ -17,5 +17,6 @@ class Article extends Model
         'description',
         'category',
         'author',
+        'content',
     ];
 }

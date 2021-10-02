@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ArticlesGroup;
+use App\Models\Article;
 use Illuminate\Http\Request;
+use App\Models\ArticlesGroup;
 use Illuminate\Support\Facades\Auth;
 
 class ArticleController extends Controller
@@ -24,6 +25,40 @@ class ArticleController extends Controller
 
         return view('createArticle', $data);
     }
+
+    public function storeArticle(Request $request) {
+        $request->validate([
+            'title' => ['required', 'string', 'max:30', 'unique:articles'],
+        ]);
+        echo 'title: ' . $request->title;
+        echo '<br>';
+        echo 'category: ' . $request->category;
+        echo '<br>';
+        echo 'description: ' . $request->description;
+        echo '<br>';
+        echo 'content: ' . $request->content;
+        echo '<br>';
+        $id = Auth::user()->id;
+
+        Article::create([
+            'title' => $request->title,
+            'category' => $request->category,
+            'title' => $request->title,
+            'author' => $id,
+            'description' => $request->description,
+            'content' => $request->content,
+        ]);
+
+        $data = [
+            'id' => Auth::user()->id,
+            'msg' => 'Aritcle has been created',
+            'categories' => $this->showAllCategories(),
+        ];
+
+        return view('createArticle')->with($data);
+    }
+
+
 
     public function showAllCategories() {
         $categories = ArticlesGroup::all();

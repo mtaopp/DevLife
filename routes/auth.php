@@ -95,6 +95,11 @@ Route::get('/createArticle', [ArticleController::class, 'createArticle'])
     ->middleware('auth')
     ->name('createArticle');
 
+Route::post('/storeArticle', [ArticleController::class, 'storeArticle'])
+    ->middleware('auth')
+    ->name('storeArticle');
+
+
 Route::get('/createCategory', [ArticleController::class, 'createCategory'])
     ->middleware('auth')
     ->name('createCategory');
