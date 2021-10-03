@@ -23,7 +23,7 @@
             @foreach ($articles as $article)
             <p class="article">
                 <div class="entryTitle">
-                    <img src=" {{ $article->image}}" alt="" class="userImage">
+                    <img src=" {{ $article->image}}" alt="" class="entryImage" >
                 </div>
                 <div class="entryContent">
                     <img>
