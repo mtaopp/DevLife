@@ -27,11 +27,11 @@
                 </div>
                 <div class="entryContent">
                     <img>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi cumque accusantium cupiditate obcaecati natus vel aliquam, consequatur aliquid molestiae fugit, quas veritatis sequi perspiciatis. A, molestias. Neque voluptatum quasi eum facere laudantium, rerum laborum. Consectetur, rerum. Fugiat necessitatibus id, assumenda corrupti eaque nam libero exercitationem!
+                    <p>{{ $article->Content}}
                     </p>
                 </div>
                 <div class="entryDetails">
-                    <p> posted on test by test</p>
+                    <p> posted on test by {{ $article->author}}</p>
                 </div>
             </p>
             <hr>
