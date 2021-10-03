@@ -31,7 +31,7 @@
                     </p>
                 </div>
                 <div class="entryDetails">
-                    <p> posted on test by {{ $author[$article->author] }}
+                    <p> posted {{$article->created_at->diffForHumans()}} by {{ $author[$article->author] }}
                 </div>
             </p>
             <hr>
