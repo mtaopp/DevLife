@@ -8,9 +8,12 @@
                 <div class="userInformation w-100">
 
                     <div class="row w-100">
-                    @if (isset($msg))
-                        <div class="row w-100">{{ $msg }}</div>
-                     @endif
+                        @if(session('success'))
+                            {{ session('success') }}
+                        @endif
+                        @if(session('error'))
+                            {{ session('error') }}
+                        @endif
                         <div class="row w-100 m-5">
                             <h1>Create a new article</h1>
                             <a href="{{ route('createCategory') }}">Create a new Category</a>
@@ -19,32 +22,38 @@
                         <section class="d-flex">
 
 
-                                <form method="POST" action= "{{ route('storeArticle') }}">
+                                <form method="POST" action= "{{ route('storeArticle') }}" enctype="multipart/form-data">
                                     @csrf
                                     <div class="row w-100">
                                         <div class="row w-100">
-                                            <label class="my-2" for="title">Category</label>
-                                            <input class="my-1" type="text" name="title" id="title">
+                                            <x-label class="text-nowrap" for="title" :value="__('Title')" />
+                                            <x-input class="ml-2" type="text" name="title" id="title" required />
+
+
                                         </div>
                                         <div class="row w-100">
                                             <label class="my-2" for="category">Category</label>
-                                            <select class="my-1" name="category" id="category" >
+                                            <select class="ml-2" name="category" id="category" >
                                                 @foreach($categories as $category)
                                                     <option value="{{ $category->id }}">{{ $category->name }}</option>
                                                 @endforeach
                                             </select>
                                         </div>
                                         <div class="row w-100">
-                                            <label class="my-2" for="description">Description</label>
-                                            <input class="my-1" type="text" name="description" id="description">
+                                            <x-label class="text-nowrap" for="description" :value="__('Description')" />
+                                            <x-input class="ml-2" type="text" name="description" id="description" required />
                                         </div>
                                         <div class="row w-100">
+                                            <x-label class="text-nowrap" for="filename" :value="__('File Name')" />
+                                            <x-input class="ml-2" type="text" name="filename" id="tifilenametle" required />
+                                        </div>
+                                        <div class=" w-100">
                                             <label class="my-2" for="image">Image</label>
-                                            <input class="my-1" type="text" name="image" id="image">
+                                            <input class="my-2" id="image" type="file" name="image">
                                         </div>
                                         <div class="row w-100">
-                                            <label class="my-2" for="content">Content</label>
-                                            <input class="my-1" type="text" name="content" id="content">
+                                            <x-label class="text-nowrap" for="content" :value="__('Content')" />
+                                            <x-input class="ml-2" type="text" name="content" id="content" required />
                                         </div>
                                     </div>
                                     <br>
@@ -59,7 +68,6 @@
             </section>
         </main><!-- /.entryTitle -->
     </div>
-
 </x-app-layout>
 
 

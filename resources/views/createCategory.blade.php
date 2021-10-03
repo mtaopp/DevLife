@@ -22,9 +22,15 @@
                                     @csrf
                                     <div class="w-100 justify-content-center">
                                         <div class="d-flex w-100">
+
                                             <x-label class="text-nowrap" for="name" :value="__('Category')" />
-                                            <x-input class="ml-2" type="name" name="name" id="name" required />
+                                            <x-input class="ml-2" type="text" name="name" id="name" required />
+
                                         </div>
+                                        @if(session('error'))
+                                             <br>
+                                            {{ session('error') }}
+                                        @endif
                                     </div>
                                     <br>
                                     <button class="px-2">Create Category</button>
