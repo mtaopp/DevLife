@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\Auth\NewPasswordController;
 use App\Http\Controllers\Auth\VerifyEmailController;
@@ -131,3 +132,12 @@ Route::get('/articles', [ArticleController::class, 'showAllArticles'])
 Route::get('/newsletter', function() {
     return view('newsletter');
 })->name('newsletter');
+
+
+
+
+
+
+Route::get('/control-panel', [AdminController::class, 'index'])
+    ->middleware('auth')
+    ->name('control-panel');

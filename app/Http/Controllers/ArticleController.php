@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Image;
 use App\Models\Article;
-use App\Models\ArticlesGroup;
 use Illuminate\Http\Request;
+use App\Models\ArticlesGroup;
+use Spatie\Permission\Models\Role;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
+use Spatie\Permission\Models\Permission;
 use phpDocumentor\Reflection\DocBlock\Tags\Var_;
 
 class ArticleController extends Controller
@@ -22,6 +25,7 @@ class ArticleController extends Controller
             'id' => Auth::user()->id,
             'categories' => $this->showAllCategories(),
         ];
+
         return view('createArticle', $data);
     }
 
