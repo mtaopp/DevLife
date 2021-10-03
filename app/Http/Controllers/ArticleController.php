@@ -17,7 +17,8 @@ use phpDocumentor\Reflection\DocBlock\Tags\Var_;
 class ArticleController extends Controller
 {
     public function showAllArticles() {
-        return view('articles');
+        $articles = Article::all();
+        return view('articles', ['articles' => $articles]);
     }
 
     public function createArticle() {
