@@ -27,7 +27,7 @@
                 </div>
                 <div class="entryContent">
                     <img>
-                    <p>{{ $article->Content}}
+                    <p>{{ $article->content}}
                     </p>
                 </div>
                 <div class="entryDetails">
