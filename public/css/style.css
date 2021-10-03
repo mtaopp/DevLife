@@ -6245,15 +6245,34 @@ footer {
   padding: 2vh;
 }
 
+/*new colors Urs
+$color6: #efe9bd; //rgba(239, 233, 189   lighter gold logo nav
+$color7: #95c1ed; //baby blue
+$color8: #7a7a7a;
+$color9: #dcd2ad; //rgba(220, 210, 173
+$color10: #8b8764; //rgba(139, 135, 100
+$color11: #b59b2e;
+$color12: #afafaf;
+/*background-color:$color1;
+background-image: linear-gradient(to right, $color9, rgba(199, 187, 143, 0.575));*/
+/*new banner Urs night try
+background: rgb(199,187,143);
+background: radial-gradient(circle, rgba(199,187,143,1) 12%, rgba(220,210,173,1) 52%, rgba(232,226,180,1) 78%, rgba(243,243,243,1) 97%);
+*/
 #letterD, #letterE, #letterV, #letterSlash, #letterL, #letterI, #letterF, #letterE2, #curlyOpen, #curlyClose {
-  stroke: #c7bb8f;
+  stroke: #d0d7dd;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
+  /*background: $color1;
+    //background: linear-gradient(90deg, rgba(199,187,143,1) 0%, rgba(199,187,143,1) 45%, rgba(0,0,0,1) 50%, rgba(199,187,143,1) 55%, rgba(199,187,143,1) 100%);
+    //background: linear-gradient(90deg, rgba(199,187,143,1) 0%, rgba(199,187,143,1) 45%, rgba(0,0,0,1) 50%, rgba(199,187,143,1) 55%, rgba(199,187,143,1) 100%);
+    background: linear-gradient(90deg, $color2 0%, $color2 5%, $color1 22%, $color1 78%, $color2 95%, $color2 100%);
+  */
   background: #c7bb8f;
-  background: linear-gradient(90deg, #d0d7dd 0%, #d0d7dd 5%, #c7bb8f 22%, #c7bb8f 78%, #d0d7dd 95%, #d0d7dd 100%);
+  background: radial-gradient(circle, #c7bb8f 12%, #dcd2ad 52%, #e8e2b4 78%, #f3f3f3 97%);
 }
 
 #navbar-link a {
