@@ -18,7 +18,19 @@ class ArticleController extends Controller
 {
     public function showAllArticles() {
         $articles = Article::all();
-        return view('articles', ['articles' => $articles]);
+        $users = User::all();
+
+        $author = [];
+            foreach($users as $user) {
+                $author[$user->id] = $user->username;
+            }
+
+
+
+        return view('articles', [
+            'articles' => $articles,
+            'author' => $author,
+        ]);
     }
 
     public function createArticle() {

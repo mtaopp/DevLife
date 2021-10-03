@@ -31,7 +31,7 @@
                     </p>
                 </div>
                 <div class="entryDetails">
-                    <p> posted on test by {{ $article->author}}</p>
+                    <p> posted on test by {{ $author[$article->author] }}
                 </div>
             </p>
             <hr>
