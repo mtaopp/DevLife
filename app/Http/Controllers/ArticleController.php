@@ -30,7 +30,7 @@ class ArticleController extends Controller
     }
 
     public function storeArticle(Request $request) {
-        echo 'image: ' . $request->image . '<br>filename: ' . $request->filename . '<br><br>title: ' . $request->title . '<br>description: ' . $request->description . '<br>content: ' . $request->content . '<br>category: ' . $request->category . '<br>';
+        //echo 'image: ' . $request->image . '<br>filename: ' . $request->filename . '<br><br>title: ' . $request->title . '<br>description: ' . $request->description . '<br>content: ' . $request->content . '<br>category: ' . $request->category . '<br>';
 
         Session::flash('error', "Title has to be unique and max 30 characters, the description cannot be longer then 255 characters");
 
@@ -83,7 +83,12 @@ class ArticleController extends Controller
             ]);
                 Session::flash('success', "Article created / without a image");
             }
-            return \Redirect::back();
+
+            $data = [
+                'id' => Auth::user()->id,
+                'categories' => $this->showAllCategories(),
+            ];
+            return view('createArticle', $data);
     }
 
 
