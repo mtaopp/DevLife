@@ -54,22 +54,7 @@ class RegisteredUserController extends Controller
         event(new Registered($user));
 
         Auth::login($user);
-
-        echo '<pre>';
-        var_dump($user);
-        echo '</pre>';
-        echo '<br>';
-        echo $user->id;
-        echo '<br>';
-        echo Auth::user()->id;
-
-die();
-
-        DB::table('model_has_roles')->insert([
-            'role_id' => $user->id,
-            'model_type' => 'App\Models\User',
-            'model_id' => 5,
-        ]);
+        $user->assignRole('User');
         return redirect(RouteServiceProvider::HOME);
     }
 }
