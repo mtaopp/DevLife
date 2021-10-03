@@ -6246,14 +6246,21 @@ footer {
 }
 
 #letterD, #letterE, #letterV, #letterSlash, #letterL, #letterI, #letterF, #letterE2, #curlyOpen, #curlyClose {
-  stroke: #c7bb8f;
+  /*stroke: $color1; old */
+  stroke: #d0d7dd;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
+  /*old Version
+    background: $color1;
+    //background: linear-gradient(90deg, rgba(199,187,143,1) 0%, rgba(199,187,143,1) 45%, rgba(0,0,0,1) 50%, rgba(199,187,143,1) 55%, rgba(199,187,143,1) 100%);
+    //background: linear-gradient(90deg, rgba(199,187,143,1) 0%, rgba(199,187,143,1) 45%, rgba(0,0,0,1) 50%, rgba(199,187,143,1) 55%, rgba(199,187,143,1) 100%);
+    background: linear-gradient(90deg, $color2 0%, $color2 5%, $color1 22%, $color1 78%, $color2 95%, $color2 100%);
+  end Old Version*/
   background: #c7bb8f;
-  background: linear-gradient(90deg, #d0d7dd 0%, #d0d7dd 5%, #c7bb8f 22%, #c7bb8f 78%, #d0d7dd 95%, #d0d7dd 100%);
+  background: radial-gradient(circle, #c7bb8f 12%, #dcd2ad 52%, #e8e2b4 78%, #f3f3f3 97%);
 }
 
 #navbar-link a {

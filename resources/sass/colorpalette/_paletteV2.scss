@@ -8,17 +8,14 @@ $color5: rgba(243, 243, 243, 1);
 
 //navbar-entry
 #letterD,#letterE,#letterV,#letterSlash,#letterL,#letterI,#letterF,#letterE2,#curlyOpen,#curlyClose{
-  stroke: $color1;
+  stroke: $color2; 
 }
 .navbar{
   display: flex;
   justify-content: space-between;
-  //background-color:$color1;
-  background: $color1;
-  //background: linear-gradient(90deg, rgba(199,187,143,1) 0%, rgba(199,187,143,1) 45%, rgba(0,0,0,1) 50%, rgba(199,187,143,1) 55%, rgba(199,187,143,1) 100%);
-  //background: linear-gradient(90deg, rgba(199,187,143,1) 0%, rgba(199,187,143,1) 45%, rgba(0,0,0,1) 50%, rgba(199,187,143,1) 55%, rgba(199,187,143,1) 100%);
-  background: linear-gradient(90deg, $color2 0%, $color2 5%, $color1 22%, $color1 78%, $color2 95%, $color2 100%);
-
+  
+background: rgb(199,187,143);
+background: radial-gradient(circle, rgba(199,187,143,1) 12%, rgba(220,210,173,1) 52%, rgba(232,226,180,1) 78%, rgba(243,243,243,1) 97%);
 }
 
 #navbar-link{
