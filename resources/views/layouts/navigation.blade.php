@@ -12,7 +12,7 @@
             <div class="collapse navbar-collapse d-flex justify-content-center " id="collapsibleNavbar">
                 <ul class="navbar-nav ">
                     <li class="nav-item align-self-center">
-                        <a class="nav-link text-center align-self-center" href="{{ route('dashboard') }}">Home</a>
+                        <a class="nav-link text-center align-self-center" href="/">Home</a>
                     </li>
                     <li class="nav-item align-self-center">
                         <a class="nav-link text-center align-self-center" href="{{ route('articles') }}">Articles</a>
