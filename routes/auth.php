@@ -22,6 +22,7 @@ Route::get('/', function() {
     ->name('home');
 
 
+
 Route::get('/register', [RegisteredUserController::class, 'create'])
     ->middleware('guest')
     ->name('register');
