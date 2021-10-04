@@ -17,7 +17,8 @@ use phpDocumentor\Reflection\DocBlock\Tags\Var_;
 class ArticleController extends Controller
 {
     public function showAllArticles() {
-        $articles = Article::all();
+        // $articles = Article::all();
+        $articles = Article::all()->sortByDesc("created_at");
         $users = User::all();
         $author = [];
             foreach($users as $user) {
