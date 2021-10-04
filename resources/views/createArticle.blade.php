@@ -4,63 +4,65 @@
     <div class="entryTitle container">
         <main role="main" class="entryTitle">
             <section class="d-flex justify-content-center">
-                <div class="userInformation w-100">
-
-                    <div class="row w-100">
+                <div class="create-article">
+                    <div>
                         @if(session('success'))
                             {{ session('success') }}
                         @endif
                         @if(session('error'))
                             {{ session('error') }}
                         @endif
-                        <div class="row w-100 m-5">
-                            <h1>Create a new article</h1>
-                            <a href="{{ route('createCategory') }}">Create a new Category</a>
-                        </div>
-
-                        <section class="d-flex">
-
-
-                                <form method="POST" action= "{{ route('storeArticle') }}" enctype="multipart/form-data">
-                                    @csrf
-                                    <div class="row w-100">
-                                        <div class="row w-100">
-                                            <x-label class="text-nowrap" for="title" :value="__('Title')" />
-                                            <x-input class="ml-2" type="text" name="title" id="title" required />
-
-
-                                        </div>
-                                        <div class="row w-100">
-                                            <label class="my-2" for="category">Category</label>
-                                            <select class="ml-2" name="category" id="category" >
-                                                @foreach($categories as $category)
+                        <div class="create">
+                            <section class="create-entry d-flex">
+                                <form  method="POST" action= "{{ route('storeArticle') }}" enctype="multipart/form-data">
+                                @csrf
+                                    <div class="entry-articleBlog ">
+                                        <div class="entry-description-list d-flex"> 
+                                            <div class="create-category">
+                                                <label class="create-category" for="category"> <br> Category</label> 
+                                                <select name="category" id="category" >
+                                                    @foreach($categories as $category)
                                                     <option value="{{ $category->id }}">{{ $category->name }}</option>
-                                                @endforeach
+                                                    @endforeach
+                                                </div>
                                             </select>
+                                            </div>
+                                        <div class="">
+                                            <a href="{{ route('createCategory') }}">Create a new Category</a>
                                         </div>
-                                        <div class="row w-100">
-                                            <x-label class="text-nowrap" for="description" :value="__('Description')" />
-                                            <x-input class="ml-2" type="text" name="description" id="description" required />
+                                        <div class="create-title">
+                                            <div class=" ">
+                                                <x-label hidden for="title" :value="__('Title')" />
+                                                <x-input type="text" placeholder="Title of you'r Post" name="title" id="title" required />
+                                            </div>
                                         </div>
-                                        <div class="row w-100">
-                                            <x-label class="text-nowrap" for="filename" :value="__('File Name')" />
-                                            <x-input class="ml-2" type="text" name="filename" id="tifilenametle" required />
+                                        <div class="create-description">
+                                            <x-label hidden for="description" :value="__('Description')" />
+                                            <x-input type="text" placeholder="Teaser of the Blog" name="description" id="description" required /> 
                                         </div>
-                                        <div class=" w-100">
-                                            <label class="my-2" for="image">Image</label>
-                                            <input class="my-2" id="image" type="file" name="image">
+                                        <div class="create-fileName">
+                                            <x-label hidden for="filename" :value="__('File Name')" />
+                                            <x-input class="create-fileName" type="text" placeholder="File Name" name="filename" id="tifilenametle" required />
                                         </div>
-                                        <div class="row w-100">
-                                            <x-label class="text-nowrap" for="content" :value="__('Content')" />
-                                            <x-input class="ml-2" type="text" name="content" id="content" required />
+                                        <div class="create-images">
+                                            <label class="" for="image"></label>
+                                            <input placeholder="Image" id="image" type="file" name="image"/>
+                                        </div> 
+                                            <button class="create-articleButton">Create Article</button>
                                         </div>
-                                    </div>
+                                        <div class="create-content">
+                                            <x-label hidden for="content" :value="__('Content')" />
+                                            <textarea class="create-content " type="text" placeholder="Content of you'r Article" cols="80" rows="15" name="content" id="content" required / >
+                                            </textarea>
+                                        </div>
+                                    </div> 
                                     <br>
-                                    <button class="px-2">Create Article</button>
                                 </form>
-                        </section>
-                        <div>
-                            <p class="userBio"></p>
+                            </section>
+                            </div>
+                            <div>
+                                <p class="userBio"></p>
+                            </div>
                         </div>
                     </div>
                 </div>

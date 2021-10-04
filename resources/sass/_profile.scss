@@ -10,3 +10,53 @@
     //font-size: 10vh;
     padding: 2vh;
 }
+//Create Article Page
+.create{
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+.create-entry{
+    display: flex;
+    justify-content: space-between;
+}
+.entry-articleBlog{
+    display: flex;
+}
+.entry-description-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.create-category{
+    margin-top: 1vh;
+}
+.create-content{
+    margin-top: 1vh;
+    border: none;
+    margin-left: 1vh;
+}
+.create-title{
+    display: flex;
+    margin-top: 1vh;
+}
+.create-description{
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 1vh;
+}
+.create-fileName{
+    display: flex;
+    margin-top: 0.5vh;
+}
+.create-images{
+    display: flex;
+    margin-top: 1vh;
+}
+.create-articleButton{
+    margin-top: 1vh;
+    border: none;
+    width: auto;
+    align-items: baseline
+}
