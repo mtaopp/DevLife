@@ -129,9 +129,12 @@ Route::post('/changeImage', [UserController::class, 'changeImage'])
 Route::get('/articles', [ArticleController::class, 'showAllArticles'])
     ->name('articles');
 
-Route::get('/newsletter', function() {
-    return view('newsletter');
-})->name('newsletter');
+Route::get('/categories', [ArticleController::class, 'showCategories'])
+    ->name('categories');
+
+// Route::get('/newsletter', function() {
+//     return view('newsletter');
+// })->name('newsletter');
 
 
 

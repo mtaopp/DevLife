@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
 {
@@ -13,7 +15,27 @@ class AdminController extends Controller
      */
     public function index()
     {
-       return view('admin-panel');
+        $users = User::all();
+        $hasrole = DB::table('model_has_roles')->get();
+        $
+        $roles = [];
+        foreach ($hasroles as $hasrole) {
+            echo $role->model_id;
+        }
+
+
+
+die();
+        // echo '<pre>';
+        // var_dump($users);
+        // echo '</pre>';
+
+        // die();
+
+       return view('admin-panel', [
+           'users' => $users,
+           'roles' => $roles,
+        ]);
     }
 
     /**

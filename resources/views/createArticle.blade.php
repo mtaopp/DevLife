@@ -51,7 +51,7 @@
                                             <input class="my-2" id="image" type="file" name="image">
                                         </div>
                                         <div class="row w-100">
-                                            <x-label class="text-nowrap" for="content" :value="__('Content')" />
+                                            <x-label class="text-nowrap" for="content" :value="__('Article')" />
                                             <x-input class="ml-2" type="text" name="content" id="content" required />
                                         </div>
                                     </div>

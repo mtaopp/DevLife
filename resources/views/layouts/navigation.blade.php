@@ -23,7 +23,7 @@
                     </li>
                     @endif
                     <li class="nav-item align-self-center">
-                        <a class="nav-link text-center align-self-center" href="{{ route('newsletter') }}">Newsletter</a>
+                        <a class="nav-link text-center align-self-center" href="{{ route('categories') }}">Categories</a>
                     </li>
                     @hasrole('Super-Admin|Admin')
                     <li class="nav-item align-self-center">

@@ -30,6 +30,11 @@ class ArticleController extends Controller
         ]);
     }
 
+    public function showCategories()
+    {
+        return view('categories');
+    }
+
     public function createArticle() {
         $data = [
             'id' => Auth::user()->id,

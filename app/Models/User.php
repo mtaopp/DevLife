@@ -13,6 +13,12 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable, HasRoles;
 
+
+    public function role()
+    {
+        return $this->hasOne(Role::class);
+    }
+    protected $role;
     /**
      * The attributes that are mass assignable.
      *
