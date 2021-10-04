@@ -9,7 +9,7 @@
                   <div id="carouselExampleControls" class="carousel slide align-center" data-ride="carousel" align="center">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="../images/codingOne.jpg" class="d-block" alt="...">
+                <img src="../images/codingOne.jpg" class="d-block" alt="">
               </div>
               <div class="carousel-item">
                 <img src="../images/devPersonOne.jpg" class="d-block" alt="...">

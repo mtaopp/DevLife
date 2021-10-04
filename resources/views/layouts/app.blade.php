@@ -33,8 +33,8 @@
             <main>
                 {{ $slot }}
             </main>
-            <footer class="container-fluid text-center p-0 w-100">
-              <div id="footer" class="container-fluid d-flex justify-content-center text-center p-0 w-100">
+            <footer>
+              <div id="" class="footdiv">
                 <div id="footer-icon1" class="footdiv-icon">
                   <i class="fab fa-linkedin"></i>
                 </div>
@@ -48,8 +48,8 @@
                   <i class="fab fa-reddit-square"></i>
                 </div>
               </div>
-              <div class=" container-fluid p-0 w-100 d-flex justify-content-around">
-                <div id="Newsletter" class="footdiv">
+              <!-- <div class=" container-fluid p-0 w-100 d-flex justify-content-around">
+                <!-- <div id="Newsletter" class="footdiv">
                   <p>Newsletter</p>
                   </div>
                   <div id="ToS" class="footdiv">
@@ -62,7 +62,7 @@
                       <p>More Link</p>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </footer>
         </div>
     </body>
