@@ -7,6 +7,7 @@ use App\Models\Image;
 use App\Models\Article;
 use Illuminate\Http\Request;
 use App\Models\ArticlesGroup;
+use Illuminate\Support\Facades\DB;
 use Spatie\Permission\Models\Role;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
@@ -21,12 +22,18 @@ class ArticleController extends Controller
         $articles = Article::all()->sortByDesc("created_at");
         $users = User::all();
         $author = [];
-            foreach($users as $user) {
-                $author[$user->id] = $user->username;
-            }
+        foreach($users as $user) {
+            $author[$user->id] = $user->username;
+        }
+        $files = DB::table('images')->get();
+        $images = [];
+        foreach($files as $file) {
+            $images[$file->id] = $file->url;
+        }
         return view('articles', [
             'articles' => $articles,
             'author' => $author,
+            'images' => $images,
         ]);
     }
 
@@ -45,16 +52,21 @@ class ArticleController extends Controller
     }
 
     public function view($id) {
-        $article = Article::findOrFail($id);
+        $articles = Article::findOrFail($id);
         $users = User::all();
         $author = [];
             foreach($users as $user) {
                 $author[$user->id] = $user->username;
             }
-
-        return view('articleFull', [
-            'article' => $article,
+        $files = DB::table('images')->get();
+        $images = [];
+        foreach($files as $file) {
+            $images[$file->id] = $file->url;
+        }
+        return view('articles', [
+            'articles' => $articles,
             'author' => $author,
+            'images' => $images,
         ]);
     }
 
