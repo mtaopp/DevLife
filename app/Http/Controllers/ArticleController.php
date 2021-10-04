@@ -166,4 +166,35 @@ class ArticleController extends Controller
 
         return view('createArticle')->with($data);
     }
+
+    public function search(Request $request){
+        // Get the search value from the request
+        $search = $request->input('search');
+
+        // Search in the title and body columns from the posts table
+        $articles = Article::query()
+            ->where('title', 'LIKE', "%{$search}%")
+            ->orWhere('description', 'LIKE', "%{$search}%")
+            ->orWhere('content', 'LIKE', "%{$search}%")
+            ->orWhere('author', 'LIKE', "%{$search}%")
+            ->orWhere('category', 'LIKE', "%{$search}%")
+            ->get();
+
+        // Return the search view with the resluts compacted$articles = Article::all()->sortByDesc("created_at");
+        $users = User::all();
+        $author = [];
+        foreach($users as $user) {
+            $author[$user->id] = $user->username;
+        }
+        $files = DB::table('images')->get();
+        $images = [];
+        foreach($files as $file) {
+            $images[$file->id] = $file->url;
+        }
+        return view('articles', [
+            'articles' => $articles,
+            'author' => $author,
+            'images' => $images,
+        ]);
+    }
 }

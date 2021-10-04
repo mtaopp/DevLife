@@ -150,3 +150,6 @@ Route::get('/categories', [ArticleController::class, 'showCategories'])
 Route::get('/control-panel', [AdminController::class, 'index'])
     ->middleware('auth')
     ->name('control-panel');
+
+
+Route::get('/', 'ArticleController@search')->name('search');

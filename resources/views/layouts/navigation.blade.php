@@ -30,6 +30,10 @@
                         <a class="nav-link text-center align-self-center" href="{{ route('control-panel') }}">Admin-Panel</a>
                     </li>
                     @endhasrole
+                    <form action="{{ route('search') }}" method="GET">
+                        <input type="text" name="search" required/>
+                        <button name="submit" class="" type="submit">Search</button>
+                        </form>
                 </ul>
             </div>
             <!-- Settings Dropdown -->
