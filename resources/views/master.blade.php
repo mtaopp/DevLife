@@ -81,6 +81,8 @@
             </nav>
         </header>
 
+
+        
         <main class="w-100">
         <div class="row w-100">
             <div class="leftdiv col-sm-2 p-0">
@@ -94,6 +96,8 @@
             </div>
         </div>
         </main>
+
+
         <footer class="container-fluid text-center p-0 w-100">
           <div id="footer" class="container-fluid d-flex justify-content-center text-center p-0 w-100">
             <div id="footer-icon1" class="footdiv-icon">

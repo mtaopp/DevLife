@@ -39,6 +39,20 @@ class ArticleController extends Controller
         return view('createArticle', $data);
     }
 
+    public function view($id) {
+        $article = Article::findOrFail($id);
+        $users = User::all();
+        $author = [];
+            foreach($users as $user) {
+                $author[$user->id] = $user->username;
+            }
+
+        return view('articleFull', [
+            'article' => $article,
+            'author' => $author,
+        ]);
+    }
+
     public function storeArticle(Request $request) {
         //echo 'image: ' . $request->image . '<br>filename: ' . $request->filename . '<br><br>title: ' . $request->title . '<br>description: ' . $request->description . '<br>content: ' . $request->content . '<br>category: ' . $request->category . '<br>';
 

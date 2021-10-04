@@ -129,6 +129,14 @@ Route::post('/changeImage', [UserController::class, 'changeImage'])
 Route::get('/articles', [ArticleController::class, 'showAllArticles'])
     ->name('articles');
 
+Route::get('/article/{id}', 'ArticleController@view');
+
+
+
+
+
+
+
 Route::get('/newsletter', function() {
     return view('newsletter');
 })->name('newsletter');
