@@ -135,11 +135,12 @@ Route::get('/article/{id}', 'ArticleController@view');
 
 
 
+Route::get('/categories', [ArticleController::class, 'showCategories'])
+    ->name('categories');
 
-
-Route::get('/newsletter', function() {
-    return view('newsletter');
-})->name('newsletter');
+// Route::get('/newsletter', function() {
+//     return view('newsletter');
+// })->name('newsletter');
 
 
 

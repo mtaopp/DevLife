@@ -18,14 +18,14 @@
                             </div>
                             <div class="d-flex flex-column">
                                 <input type="text" name="firstname" id="firstname" value="{{ $firstname }}">
-                                <input type="text" name="email" id="email" value="{{ $email }}">
                                 <input type="text" name="lastname" id="lastname" value="{{ $lastname }}">
+                                <input type="text" name="email" id="email" value="{{ $email }}">
                             </div>
                         </div>
 
 
                         <br>
-                        <button>Send</button>
+                        <button>Save</button>
                     </form>
                 </div>
             </section>
@@ -33,5 +33,4 @@
     </div>
 
 </x-app-layout>
-
 

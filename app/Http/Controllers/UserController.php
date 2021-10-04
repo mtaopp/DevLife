@@ -82,23 +82,31 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        // $request->validate([
-        //     'firstname' => ['required', 'string', 'max:30'],
-        //     'lastname' => ['required', 'string', 'max:40'],
-        //     'username' => ['required', 'string', 'max:30', 'unique:users'],
-        //     'email' => ['required', 'string', 'email', 'max:50', 'unique:users'],
-        // ]);
-        // die();
-        //
-        // echo $user;
-        // $user->firstname = $request->firstname;
-        // $user->lastname = $request->lastname;
-        // $user->email = $request->email;
-
-        // echo '<pre>';
-        // var_dump($user);
-        // //var_dump($request->all());
-        // echo '</pre>';
+        if(Auth::user()->email == $request->email) {
+            $request->validate([
+                'firstname' => ['required', 'string', 'max:30'],
+                'lastname' => ['required', 'string', 'max:40'],
+            ]);
+            DB::table('users')
+            ->where('id', Auth::user()->id)
+            ->update([
+                'firstname' => $request->firstname,
+                'lastname' => $request->lastname,
+            ]);
+        } else {
+            $request->validate([
+                'firstname' => ['required', 'string', 'max:30'],
+                'lastname' => ['required', 'string', 'max:40'],
+                'email' => ['required', 'string', 'email', 'max:50', 'unique:users'],
+            ]);
+            DB::table('users')
+            ->where('id', Auth::user()->id)
+            ->update([
+                'firstname' => $request->firstname,
+                'lastname' => $request->lastname,
+                'email' => $request->email,
+            ]);
+        }
 
 
 
