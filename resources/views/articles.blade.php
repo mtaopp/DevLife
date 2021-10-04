@@ -34,7 +34,7 @@
                                 <img src="
                                     @php
                                         if(is_numeric($article->image)) {
-                                            echo 'storage/upload/images/' . $images[$article->image];
+                                            echo $images[$article->image];
                                         } else {
                                             echo $article->image;
                                         }

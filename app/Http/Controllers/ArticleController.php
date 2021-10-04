@@ -96,7 +96,7 @@ class ArticleController extends Controller
                 ]);
                 $extension = $request->image->extension();
                 $request->image->storeAs('/public/upload/images', $validated['filename'].".".$extension);
-                $url = Storage::url($validated['filename'].".".$extension);
+                $url = Storage::url('upload/images'.$validated['filename'].".".$extension);
 
                 $image = Image::create([
                     'filename' => $validated['filename'],
