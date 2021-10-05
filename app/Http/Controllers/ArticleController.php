@@ -63,8 +63,8 @@ class ArticleController extends Controller
         foreach($files as $file) {
             $images[$file->id] = $file->url;
         }
-        return view('articles', [
-            'articles' => $articles,
+        return view('articleFull', [
+            'article' => $articles,
             'author' => $author,
             'images' => $images,
         ]);
