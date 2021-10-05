@@ -52,7 +52,7 @@
                 </div>
               </div>
               <div class="container text-center">
-                  <h6>© 2021 by Sumi Kaurca</h6>
+                <h6>© 2021 by Kami Urcasu</h6>
 
               </div>
             </footer>
