@@ -50,10 +50,32 @@ class ArticleController extends Controller
         foreach($files as $file) {
             $images[$file->id] = $file->url;
         }
+
+        // Erstellen von 2 Arrays, Array1 $recentArticles und Array2 $randomArticles
+
+        // Array 1
+        $recentArticles = [];
+        for ($i=0; $i < 3; $i++) {
+            array_push($recentArticles, $articles[$i]);
+        }
+
+        // echo '<pre>';
+        // var_dump((array)$recentArticles);
+        // echo '</pre>';
+
+        // die();
+
+
+        // Array 2
+        $random = (array)$articles;
+        $randomArticles = shuffle($random);
+
         return view('home', [
             'article' => $articles,
             'author' => $author,
             'images' => $images,
+            'news' => $recentArticles,
+            'random' => $randomArticles,
         ]);
     }
 
