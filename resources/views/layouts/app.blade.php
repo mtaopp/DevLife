@@ -20,7 +20,7 @@
     </head>
     <body>
       <!-- back to top button -->
-      <button onclick="topFunction()"id="myBtn" title="Go to top"><i class="far fa-arrow-alt-circle-up"></i></button>
+      <button onclick="topFunction()"id="myBtn" title="Go to top"><i class="far fa-arrow-alt-circle-up fa-2x"></i></button>
       <!-- back to the top button end -->
         <div>
             @include('layouts.navigation')
@@ -51,21 +51,10 @@
                   <i class="fab fa-reddit-square"></i>
                 </div>
               </div>
-              <!-- <div class=" container-fluid p-0 w-100 d-flex justify-content-around">
-                <!-- <div id="Newsletter" class="footdiv">
-                  <p>Newsletter</p>
-                  </div>
-                  <div id="ToS" class="footdiv">
-                    <p>Term of Service</p>
-                  </div>
-                  <div id="About us" class="footdiv">
-                    <p>About us</p>
-                  </div>
-                  <div id="More Link" class="footdiv">
-                      <p>More Link</p>
-                  </div>
-                </div>
-              </div> -->
+              <div class="container text-center">
+                  <h6>© 2021 by Sumi Kaurca</h6>
+
+              </div>
             </footer>
         </div>
     </body>
