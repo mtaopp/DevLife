@@ -28,9 +28,9 @@
 
                         <div class="row">
                             <div class="col-sm-6" id="entryImage">
-
-                                @if (is_numeric($article->image)))
-                                    <img src="{{ $images[$article->id] }}" alt="" class="entryImage">
+                                {{ $article->image }}
+                                @if (is_numeric($article->image))
+                                    <img src="{{ 'storage/upload/images/foxy.jpg' }}" alt="" class="entryImage">
                                 @else
 
                                     <img src="{{ $article->image }}" alt="" class="entryImage">
