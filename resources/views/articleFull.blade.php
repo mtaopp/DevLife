@@ -38,7 +38,7 @@
 
                     <div class="row">
                         <div class="col-sm-6" id="entryImage">
-                            <img src=" {{ $article->image }}" alt="" class="entryImage" >
+                           
                         </div>
                     </div>
                     

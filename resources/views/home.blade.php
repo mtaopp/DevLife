@@ -28,8 +28,11 @@
             </a>
             </div>
           </section>
+          <hr>
           <br>
           <section >
+            <h1>Recent Posts</h1>
+            <br>
             <div class="entryTitle">
                 <h2>A little Stretching</h2>
                 <p class="entryContent">
