@@ -27,7 +27,11 @@ class RoleSeeder extends Seeder
         // Super Admins
         $user = User::find(1);
         $user->assignRole('Super-Admin');
+        
+        
         $user = User::find(2);
+
+
         $user->assignRole('Super-Admin');
         $user = User::find(3);
         $user->assignRole('Super-Admin');
