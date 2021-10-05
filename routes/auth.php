@@ -15,15 +15,11 @@ use App\Http\Controllers\Auth\EmailVerificationPromptController;
 use App\Http\Controllers\Auth\EmailVerificationNotificationController;
 
 
-Route::get('/', function() {
-    return view('home');
-})
+Route::get('/', 'ArticleController@showHome')
     ->middleware('guest')
     ->name('home');
 
-Route::get('/home', function() {
-    return view('home');
-})
+Route::get('/home', 'ArticleController@showHome')
     ->middleware('guest')
     ->name('home');
 

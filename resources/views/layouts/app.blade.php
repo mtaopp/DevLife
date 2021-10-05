@@ -20,7 +20,7 @@
     </head>
     <body>
       <!-- back to top button -->
-      <button onclick="topFunction()"id="myBtn" title="Go to top"><i class="far fa-arrow-alt-circle-up"></i></button>
+      <button onclick="topFunction()"id="myBtn" title="Go to top"><i class="far fa-arrow-alt-circle-up fa-2x"></i></button>
       <!-- back to the top button end -->
         <div>
             @include('layouts.navigation')
@@ -52,7 +52,7 @@
                 </div>
               </div>
               <div class="container text-center">
-              <h6>© 2021 by Suka Urmica</h6>
+                <h6>© 2021 by Kami Urcasu</h6>
               </div>
             </footer>
         </div>

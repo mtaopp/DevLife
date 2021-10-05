@@ -18,9 +18,6 @@
             </section>
 
             <section>
-
-
-
                 <ul>
                  @foreach ($articles as $article)
                     <li class="col-sm-12" id="article">
@@ -31,32 +28,35 @@
 
                         <div class="row">
                             <div class="col-sm-6" id="entryImage">
-                                <img src="
-                                    @php
-                                        if(is_numeric($article->image)) {
-                                            echo $images[$article->image];
-                                        } else {
-                                            echo $article->image;
-                                        }
-                                    @endphp " alt="" class="entryImage" >
-                            </div>
+                                {{ $article->image }}
+                                @if (is_numeric($article->image))
+                                    <img src="{{ 'storage/upload/images/foxy.jpg' }}" alt="" class="entryImage">
+                                @else
 
+                                    <img src="{{ $article->image }}" alt="" class="entryImage">
+                                @endif
+
+
+                            </div>
                             <div class="col-sm-6"  id="entryContent">
                                 {{ $article->description}}
-                                {{ $article->content }}
+
+                                {{\Illuminate\Support\Str::limit($article->content, 150)}}
+                                @if (strlen($article->conent) > 150)
+                                    <span id="ellipses">...</span>
+                                    <span id="more">{{ substr($article->content, 150) }}</span>
+                                @endif
+                                <a href="/article/{{$article->id}}">Read more</a>
                             </div>
                         </div>
 
                         <div class="timestamp">
-                            <span class="entryDetails"></span>
+                            <span class="entryDetails">{{ $article->created_at->diffForHumans() }}</span>
                         </div>
                     </li>
                     <hr>
                     @endforeach
                 </ul>
-
-
-
             </section>
         </main><!-- /.entryTitle -->
     </div>
