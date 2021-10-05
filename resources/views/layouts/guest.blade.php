@@ -51,20 +51,8 @@
                   <i class="fab fa-reddit-square"></i>
                 </div>
               </div>
-              <div class=" container-fluid p-0 w-100 d-flex justify-content-around">
-                <div id="Newsletter" class="footdiv">
-                  <p>Newsletter</p>
-                  </div>
-                  <div id="ToS" class="footdiv">
-                    <p>Term of Service</p>
-                  </div>
-                  <div id="About us" class="footdiv">
-                    <p>About us</p>
-                  </div>
-                  <div id="More Link" class="footdiv">
-                      <p>More Link</p>
-                  </div>
-                </div>
+              <div class="container text-center">
+                <h3>© 2021 by Suka Urmica</h3>
               </div>
             </footer>
         </div>
