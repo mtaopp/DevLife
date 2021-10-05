@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-sm" id="navbar">
         <!-- Logo -->
         <div class="flex-shrink-0 flex items-center">
-            <a href="{{ route('articles') }}">
+            <a href="{{ route('home') }}">
                 <x-application-logo class="block h-10 w-auto fill-current text-gray-600" />
             </a>
         </div>
@@ -12,7 +12,7 @@
             <div class="collapse navbar-collapse d-flex justify-content-center " id="collapsibleNavbar">
                 <ul class="navbar-nav ">
                     <li class="nav-item align-self-center">
-                        <a class="nav-link text-center align-self-center" href="{{ route('articles') }}">Home</a>
+                        <a class="nav-link text-center align-self-center" href="{{ route('home') }}">Home</a>
                     </li>
                     <li class="nav-item align-self-center">
                         <a class="nav-link text-center align-self-center" href="{{ route('articles') }}">Articles</a>

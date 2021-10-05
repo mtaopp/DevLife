@@ -21,7 +21,11 @@ Route::get('/', function() {
     ->middleware('guest')
     ->name('home');
 
-
+Route::get('/home', function() {
+    return view('home');
+})
+    ->middleware('guest')
+    ->name('home');
 
 Route::get('/register', [RegisteredUserController::class, 'create'])
     ->middleware('guest')
