@@ -37,6 +37,26 @@ class ArticleController extends Controller
         ]);
     }
 
+    public function showHome() {
+        // $articles = Article::all();
+        $articles = Article::all()->sortByDesc("created_at");
+        $users = User::all();
+        $author = [];
+        foreach($users as $user) {
+            $author[$user->id] = $user->username;
+        }
+        $files = DB::table('images')->get();
+        $images = [];
+        foreach($files as $file) {
+            $images[$file->id] = $file->url;
+        }
+        return view('home', [
+            'article' => $articles,
+            'author' => $author,
+            'images' => $images,
+        ]);
+    }
+
     public function showCategories()
     {
         return view('categories');

@@ -18,26 +18,6 @@
             </section>
 
             <section>
-            <!-- <h2>Category 1</h2>
-
-            @foreach ($articles as $article)
-            <p class="article">
-                <div class="entryTitle">
-                    <img src=" {{ $article->image}}" alt="" class="entryImage" >
-                </div>
-                <div class="entryContent">
-                    <img>
-                    <p>{{ $article->content}}
-                    </p>
-                </div>
-                <div class="entryDetails">
-                    <p> posted {{$article->created_at->diffForHumans()}} by {{ $author[$article->author] }}
-                </div>
-            </p>
-            <hr>
-            @endforeach -->
-
-            
                 <ul>
                  @foreach ($articles as $article)   
                     <li class="col-sm-12" id="article">
@@ -57,7 +37,7 @@
                                 {{\Illuminate\Support\Str::limit($article->content, 150)}}            
                                 @if (strlen($article->conent) > 150)
                                     <span id="ellipses">...</span>
-                                    <span id="more">{{ substr($article->content, 100) }}</span>
+                                    <span id="more">{{ substr($article->content, 150) }}</span>
                                 @endif
                                 <a href="/article/{{$article->id}}">Read more</a>
                             </div>
@@ -70,9 +50,6 @@
                     <hr>
                     @endforeach
                 </ul>
-                
-
-
             </section>
         </main><!-- /.entryTitle -->
     </div>

@@ -2,7 +2,7 @@
     <x-slot name="header">
 
     </x-slot>
-
+    <!-- start carousel -->
     <div class="entryTitle container">
         <main role="main" class="entryTitle">
           <section>
@@ -28,69 +28,51 @@
             </a>
             </div>
           </section>
+          <!-- end carousel -->
           <hr>
           <br>
-          <section >
-            <h1>Recent Posts</h1>
-            <br>
-            <div class="entryTitle">
-                <h2>A little Stretching</h2>
-                <p class="entryContent">
-                  <a href="article">
-                    <img class="entryImage" src="../images/yogaMan.jpg" alt="imagesOne">
-                  </a>Etiam porta sem malesuada magna
-                  mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-                  Aenean lacinia bibendum nulla sed consectetur.Etiam porta sem malesuada magna
-                  mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-                  Aenean lacinia bibendum nulla sed consectetur mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-                  Aenean lacinia bibendum nulla sed consectetur. <br><br><br>
-                  Etiam porta sem malesuada magna
-                  mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-                  Aenean lacinia bibendum nulla sed consectetur.Etiam porta sem malesuada magna
-                  mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-                  Aenean lacinia bibendum nulla sed consectetur mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-                  Aenean lacinia bibendum nulla sed consectetur.
-              </p>
-            <a href="article">read more...</a>
-            </div>
-          </section>
-          <hr>
-          <section >
-              <div class="entryTitle">
-                  <h2>Snack Time</h2>
-                  <p class="entryContent">
-                    <a href="article">
-                      <img class="entryImage" src="../images/eatingChips.jpg" alt="imagesTwo">
-                    </a> <br>
-                    Etiam porta sem malesuada magna
-                    mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-                    Aenean lacinia bibendum nulla sed consectetur.Etiam porta sem malesuada magna
-                    mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-                    Aenean lacinia bibendum nulla sed consectetur mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-                    Aenean lacinia bibendum nulla sed consectetur.
-                </p>
-              <a href="article">read more...</a>
-              </div>
-            </section>
-            <hr>
-            <section >
+          <!-- rescent post section -->
+          <section><h1>Recent Posts</h1></section>
+          
+          <section id="recentArticles">
+            </ul>
+            
+               <li class="col-sm-12" id="article">
+                        <div class="col-sm-10"  id="entryTitle">
+                             <h2 class="articleTitle"><a href="/article/{{$article[0]->id}}">{{ $article[0]->title }}</a></h2>
+                            <span class="cr-by">created by {{ $author[$article[0]->author] }}</span> 
+                        </div>
+                       
+                        <div class="row">
+                            <div class="col-sm-6" id="entryImage">
+                                <img src="{{ $article[0]->image}}" alt="" class="entryImage">
+                            </div>
+    
+                            <div class="col-sm-6"  id="entryContent">
+                                {{ $article[0]->description}}
 
-              <div class="entryTitle">
-                  <h2>Walk</h2>
-                  <p class="entryContent">
-                    <a href="article">
-                      <img class="entryImage" src="../images/subaruduckdance.gif" alt="dancing duck">
-                    </a> <br>
-                    Etiam porta sem malesuada magna
-                    mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-                    Aenean lacinia bibendum nulla sed consectetur.Etiam porta sem malesuada magna
-                    mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-                    Aenean lacinia bibendum nulla sed consectetur mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-                    Aenean lacinia bibendum nulla sed consectetur.
-                  </p>
-                  <a href="article">read more...</a>
-              </div>
-            </section>
+                                {{\Illuminate\Support\Str::limit($article[0]->content, 150)}}            
+                                @if (strlen($article[0]->conent) > 150)
+                                    <span id="ellipses">...</span>
+                                    <span id="more">{{ substr($article[0]->content, 150) }}</span>
+                                @endif
+                                <a href="/article/{{$article[0]->id}}">Read more</a>
+                            </div>
+                        </div>
+
+                        <div class="timestamp">
+                            <span class="entryDetails">{{ $article[0]->created_at->diffForHumans() }}</span>
+                        </div>
+                    </li>
+                    <hr>
+           
+            <ul>
+              
+
+          </section>
+          
+       
+          <!-- end recent posts -->
             <hr>
             <div>
               <div class="w-100">
