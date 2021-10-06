@@ -1,3 +1,56 @@
+//Login section apge Start
+.entry-login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .login-input{
+        display: flex;
+        flex-direction: column;
+        .EP{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            margin-bottom: 260px;
+            .E{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+            .P{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin-top: 10px;
+            }
+            .RM{
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
+            }
+            .L{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                    //button style
+                    button{
+                        border: none;
+                        border-radius: 5px;
+                        height: 50px;
+                        width: 80px;
+                        transition: 0.5s;
+                    }
+                    button:hover{
+                        background-color: rgb(64, 143, 247);
+                        color: white;
+                    }
+            }   
+        }
+    }
+}
+//Login section apge END
+
+//registersection START
+//flex-box overall/width-full changes
 .register-logo{
     display: flex;
     flex-direction: row;
@@ -6,13 +59,14 @@
     margin-top: 20px;
     
 }
+//register text and text-box
 .entry-register{
     display: flex;
     justify-content: center;
     background-color: rgba(208,215,221,1);
     font-size: 15px;
     text-align: center;
-    
+//FLU from FirstName, LastName and UserName spacing
     .FLU{
         display: flex;
         flex-direction: column;
@@ -31,9 +85,11 @@
         }
     }
 }
+//register-div background-color
 .register{
     background-color: rgba(208,215,221,1);
 }
+//EPCP Email, Password and ConfirmPassword spacing
 .EPCP{
     display: flex;
     flex-direction: column;
@@ -54,10 +110,21 @@
         //margin-bottom: 50px;
     }
 }
+//register button only
 .register-button{
-    
     margin-bottom: 250px;
+
     .button{
         border: none;
+        border-radius: 5px;
+        height: 50px;
+        width: 80px;
+        transition: 0.5s;
     }
-}
+        .button:hover{
+            background-color: rgb(64, 143, 247);
+            color: white;
+        }
+    }   
+
+//Register section END

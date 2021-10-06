@@ -1,1 +1,1 @@
-<a {{ $attributes->merge(['class' => 'bg-primary']) }}>{{ $slot }}</a>
+<a {{ $attributes->merge(['class' => '']) }}>{{ $slot }}</a>

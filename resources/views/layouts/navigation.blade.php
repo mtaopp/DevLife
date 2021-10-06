@@ -42,7 +42,7 @@
                     <x-dropdown width="48">
                         <x-slot name="trigger">
                             <button class="d-flex flex-row-reverse">
-                                <div class="mr-2">{{ Auth::check() ? (Auth::user()->username) : "Log in" }}</div>
+                                <div class="login-Login">{{ Auth::check() ? (Auth::user()->username) : "Log in" }}</div>
 
                                 <div class="mx-2">
                                     <i class="fas fa-chevron-down"></i>

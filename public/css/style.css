@@ -6141,17 +6141,16 @@ readers do not read off random characters that represent icons */
   text-decoration: none;
 }
 
-.nav-item {
-  padding: 1vh;
-}
-
-.dashboard {
-  width: 15vh;
-}
-
-.loginButton {
+.login-Button {
   border: none;
   border-radius: 0.5vh;
+}
+.login-Button button {
+  border: none;
+  border-radius: 0.5vh;
+}
+.login-Button button .login-Login {
+  width: 80px;
 }
 
 html {
@@ -6311,6 +6310,54 @@ footer {
   align-items: baseline;
 }
 
+.entry-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.entry-login .login-input {
+  display: flex;
+  flex-direction: column;
+}
+.entry-login .login-input .EP {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 260px;
+}
+.entry-login .login-input .EP .E {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.entry-login .login-input .EP .P {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.entry-login .login-input .EP .RM {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.entry-login .login-input .EP .L {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.entry-login .login-input .EP .L button {
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 80px;
+  transition: 0.5s;
+}
+.entry-login .login-input .EP .L button:hover {
+  background-color: #408ff7;
+  color: white;
+}
+
 .register-logo {
   display: flex;
   flex-direction: row;
@@ -6367,6 +6414,14 @@ footer {
 }
 .register-button .button {
   border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 80px;
+  transition: 0.5s;
+}
+.register-button .button:hover {
+  background-color: #408ff7;
+  color: white;
 }
 
 #letterD, #letterE, #letterV, #letterSlash, #letterL, #letterI, #letterF, #letterE2, #curlyOpen, #curlyClose {
