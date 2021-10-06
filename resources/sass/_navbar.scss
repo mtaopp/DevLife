@@ -1,7 +1,6 @@
 .navbar{
   display: flex;
   justify-content: space-between;
-  background-color:black;
   font-size: 2vh;
   padding: 1vh;
 }
@@ -17,15 +16,37 @@
     text-decoration: none;
   }
 }
+.login.drop{
+  border-radius: 0.5vh;
+}
 .login-Button{
   border: none;
   border-radius: 0.5vh;
+  background-color: rgb(199,187,143);
+  color: white;
   button{
     border:none;
     border-radius: 0.5vh;
     .login-Login{
       width: 80px;
       overflow: hidden;
+      background-color: rgb(199,187,143);
+      color: white;
     }
   }
 }
+.login-arrow{
+  border: none;
+  background-color: rgb(199,187,143);
+  color: white;
+  width: 50px;
+}
+.search{
+  border:none;
+  border-radius: 0.5vh;
+  width: 80px;
+  background-color: rgb(199,187,143);
+  color: white;
+}
+
+

@@ -4,8 +4,6 @@ $color2: rgba(208,215,221,1);
 $color3: rgba(0, 0, 0, 1);
 $color4: rgba(236, 238, 226, 1);
 $color5: rgba(243, 243, 243, 1);
-
-
 //navbar-entry
 #letterD,#letterE,#letterV,#letterSlash,#letterL,#letterI,#letterF,#letterE2,#curlyOpen,#curlyClose{
   stroke: $color2; 
@@ -16,21 +14,18 @@ $color5: rgba(243, 243, 243, 1);
   background: rgb(199,187,143);
   background: radial-gradient(circle, rgba(199,187,143,1) 12%, rgba(220,210,173,1) 52%, rgba(232,226,180,1) 78%, rgba(243,243,243,1) 97%);
 }
-
 #navbar-link{
   a{
     color:$color3;
     text-decoration: none;
   }
 }
-
 #navbar{
   a{
     color:$color3;
     text-decoration: none;
   }
 }
-
 .dashboard{
   width: 15vh;
 }
@@ -38,7 +33,7 @@ $color5: rgba(243, 243, 243, 1);
 //body-entry
 html{
   body{
-      background-color:$color2;
+    background-color:$color2;
   }
 }
 #article{
@@ -60,12 +55,8 @@ footer {
   flex-direction: column;
   background: $color1;
   background: linear-gradient(90deg, $color2 0%, $color2 5%, $color1 22%, $color1 78%, $color2 95%, $color2 100%);
-
 }
-
-
 #footer-icon1,#footer-icon2,#footer-icon3,#footer-icon4{
   color: $color3;
 }
-
 //footer-end

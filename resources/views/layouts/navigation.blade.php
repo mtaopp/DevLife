@@ -32,30 +32,26 @@
                     @endhasrole
                     <form action="{{ route('search') }}" method="GET">
                         <input type="text" name="search" required/>
-                        <button name="submit" class="" type="submit">Search</button>
-                        </form>
+                        <button name="submit" class="search" type="submit">Search</button>
+                    </form>
                 </ul>
             </div>
             <!-- Settings Dropdown -->
-            <div style="width: 60.705mm" class="d-flex flex-row-reverse">
-                <div class="">
+            <div class="">
+                <div class="login-drop">
                     <x-dropdown width="48">
                         <x-slot name="trigger">
                             <button class="d-flex flex-row-reverse">
                                 <div class="login-Login">{{ Auth::check() ? (Auth::user()->username) : "Log in" }}</div>
-
-                                <div class="mx-2">
+                                <div class="login-arrow">
                                     <i class="fas fa-chevron-down"></i>
                                 </div>
                             </button>
                         </x-slot>
-
                         <x-slot name="content">
                                 <!-- Authentication -->
                                 <form method="POST" action="{{ route('logout') }}">
                                     @csrf
-
-
                                     @if (!Auth::check())
                                     <x-dropdown-link :href="route('login')">
                                         {{ __('Log in') }}
@@ -70,8 +66,8 @@
                                     </x-dropdown-link>
                                     <br>
                                     <x-dropdown-link :href="route('logout')"
-                                            onclick="event.preventDefault();
-                                                        this.closest('form').submit();">
+                                        onclick="event.preventDefault();
+                                                    this.closest('form').submit();">
                                         {{ __('Log Out') }}
                                     </x-dropdown-link>
                                     @endif
