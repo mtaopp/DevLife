@@ -1,0 +1,77 @@
+$color1: #7a7a7a;
+$color2: #d0e8ba;
+$color3: #95c1ed;
+$color4: #efe9bd;
+$color5: #5c5b5b;
+//navbar-entry
+
+#letterD,#letterE,#letterV,#letterSlash,#letterL,#letterI,#letterF,#letterE2,#curlyOpen,#curlyClose{
+    stroke: $color3;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  background-color:$color3;
+  
+}
+
+#navbar-link{
+  a{
+    color:$color4;
+    text-decoration: none;
+  }
+}
+
+#navbar{
+  a{
+    color:$color4;
+    text-decoration: none;
+  }
+}
+
+.dashboard{
+  width: 15vh;
+}
+//navbar-end
+//body-entry
+html{
+  body{
+      background-color:$color2;
+  }
+}
+
+.maindiv{
+  min-height:100vh;
+  background-color:$color2;
+}
+//body-end
+//footer-entry
+footer {
+  background-color: $color3;
+  color: $color4;
+  flex-direction: column;
+}
+
+.footdiv-icon{
+  height:1vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 7vh;
+  padding-right: 7vh;
+  font-size: 5vh;
+}
+.footdiv{
+  height:1vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  display: flex;
+  justify-content: space-around;
+  
+  
+}
+
+#footer-icon1,#footer-icon2,#footer-icon3,#footer-icon4{
+  color: $color4;
+}
+
+//footer-end

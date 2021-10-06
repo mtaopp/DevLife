@@ -5,7 +5,7 @@
 @section('main')
 
 
-<form method="POST" action="/storeProfile">
+<form method="POST" action= "{{ action('storeProfile') }}">
     @csrf
 
     <label for="firstname">First Name</label><br>

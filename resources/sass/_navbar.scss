@@ -1,12 +1,10 @@
-nav{
-   
-}
-
 .navbar{
     display: flex;
     justify-content: space-between;
     background-color:black;
-    
+    font-size: 2vh;
+    padding: 1vh;
+
   }
 
   #navbar-link{
@@ -21,7 +19,15 @@ nav{
       text-decoration: none;
     }
   }
+  .nav-item{
+    padding: 1vh;
+  }
 
 .dashboard{
     width: 15vh;
+}
+
+.loginButton{
+  border: none;
+  border-radius: 0.5vh;
 }
