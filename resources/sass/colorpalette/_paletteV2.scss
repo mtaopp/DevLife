@@ -6,8 +6,17 @@ $color4: rgba(236, 238, 226, 1);
 $color5: rgba(243, 243, 243, 1);
 $colorMainDiv: rgba(228, 226, 226,  1); //#e4e2e2
 $colorFooterGrey: #c5c5c5;
+
+$bg-carousel: rgba(230, 230, 230, 1);
+$color-dark: rgb(44, 44, 44);
+
+$bg-carousel: rgba(223, 233, 241, 1);
 /*$colorCarousel:
 $color*/
+
+.carousel-control-next-icon {
+    color: $color1;
+}
 
 //body-entry
 html{
@@ -63,10 +72,6 @@ html{
 }
 //navbar-end
 
-//Carousel
-.carousel{
-  background-color:#cacaca;
-}
 #article{
  list-style: none;
 }
@@ -74,12 +79,6 @@ html{
   min-height:100vh;
   background-color:$color2;
 }
-
-.carousel-item{
-    align-items: center;
-    }
-//Carousel End
-
 
 //Article Posts
 .entryImage{
