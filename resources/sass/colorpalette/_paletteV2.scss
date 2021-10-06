@@ -13,9 +13,8 @@ $color5: rgba(243, 243, 243, 1);
 .navbar{
   display: flex;
   justify-content: space-between;
-  
-background: rgb(199,187,143);
-background: radial-gradient(circle, rgba(199,187,143,1) 12%, rgba(220,210,173,1) 52%, rgba(232,226,180,1) 78%, rgba(243,243,243,1) 97%);
+  background: rgb(199,187,143);
+  background: radial-gradient(circle, rgba(199,187,143,1) 12%, rgba(220,210,173,1) 52%, rgba(232,226,180,1) 78%, rgba(243,243,243,1) 97%);
 }
 
 #navbar-link{
