@@ -5,7 +5,7 @@
     </div>
 
     <div x-show="open"
-            class="position-absolute z-50 rounded-md shadow-lg bg-primary"
+            class="position-absolute z-50 rounded-md shadow-lg "
             style="display: none;"
             @click="open = false">
         <div class="rounded-md">

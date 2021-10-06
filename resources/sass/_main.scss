@@ -13,7 +13,7 @@ html{
     border: block 0;;
 }
 .carousel{
-    background-color:#c0c6cc; 
+    background-color:#c0c6cc;
 }
 .maindiv{
     min-height:100vh;
@@ -48,4 +48,8 @@ html{
 }
 .carousel-item{
 align-items: center;
+}
+
+section li   {
+    list-style: none;
 }

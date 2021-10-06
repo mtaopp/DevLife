@@ -30,9 +30,9 @@
                         <a class="nav-link text-center align-self-center" href="{{ route('control-panel') }}">Admin-Panel</a>
                     </li>
                     @endhasrole
-                    <form action="{{ route('search') }}" method="GET">
+                    <form action="{{ route('search') }}" method="GET" class="align-self-center">
                         <input type="text" name="search" required/>
-                        <button name="submit" class="" type="submit">Search</button>
+                        <button name="submit" class="mainBtn align-self-center" type="submit">Search</button>
                         </form>
                 </ul>
             </div>
@@ -41,7 +41,7 @@
                 <div class="">
                     <x-dropdown width="48">
                         <x-slot name="trigger">
-                            <button class="d-flex flex-row-reverse">
+                            <button class="d-flex flex-row-reverse mainBtn">
                                 <div class="mr-2">{{ Auth::check() ? (Auth::user()->username) : "Log in" }}</div>
 
                                 <div class="mx-2">
@@ -52,7 +52,7 @@
 
                         <x-slot name="content">
                                 <!-- Authentication -->
-                                <form method="POST" action="{{ route('logout') }}">
+                                <form method="POST" class="dropdown-list" action="{{ route('logout') }}">
                                     @csrf
 
 
