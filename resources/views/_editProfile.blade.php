@@ -1,13 +1,9 @@
 @extends('master')
-
 @section('pageTitle', 'Edit User Profile')
-
 @section('main')
-
 
 <form method="POST" action= "{{ action('storeProfile') }}">
     @csrf
-
     <label for="firstname">First Name</label><br>
     <input type="text" name="firstname" id="firstname" value="{{ $firstname }}"><br>
 
@@ -22,5 +18,4 @@
     <br>
     <button>Send</button>
     </form>
-
 @endsection

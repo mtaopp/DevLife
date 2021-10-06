@@ -7,16 +7,10 @@
         <main role="main" class="articleTitle">
             <section>
                 <h1>Category Selction / Searchbar</h1>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <hr>
+                <br><br><br>
+                <br><br><br>
+                <br><hr>
             </section>
-
             <section>
                 <ul>
                  @foreach ($articles as $article)
@@ -25,7 +19,6 @@
                              <h2 class="articleTitle"><a href="/article/{{$article->id}}">{{ $article->title }}</a></h2>
                             <span class="cr-by">created by {{ $author[$article->author] }}</span>
                         </div>
-
                         <div class="row">
                             <div class="col-sm-6" id="articleImage">
                                 @if (is_numeric($article->image))
@@ -34,12 +27,9 @@
 
                                     <img src="{{ $article->image }}" alt="" class="articleImage">
                                 @endif
-
-
                             </div>
                             <div class="col-sm-6"  id="articleContent">
                                 {{ $article->description}}
-
                                 {{\Illuminate\Support\Str::limit($article->content, 150)}}
                                 @if (strlen($article->conent) > 150)
                                     <span id="ellipses">...</span>
@@ -48,7 +38,6 @@
                                 <a href="/article/{{$article->id}}">Read more</a>
                             </div>
                         </div>
-
                         <div class="timestamp">
                             <span class="articleDetails">{{ $article->created_at->diffForHumans() }}</span>
                         </div>
@@ -59,5 +48,4 @@
             </section>
         </main><!-- /.articleTitle -->
     </div>
-
 </x-app-layout>

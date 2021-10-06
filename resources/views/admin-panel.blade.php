@@ -2,7 +2,6 @@
     <x-slot name="header">
 
     </x-slot>
-
     <div class="entryTitle container">
         <main role="main" class="entryTitle w-100">
             <section class="text-left w-100">
@@ -31,7 +30,6 @@
                             <th class=" mx-3 justify-content-between flex-grow-1">{{ $user->email }}</th>
                             <th class=" mx-3 justify-content-between flex-grow-1">{{ $roles}}</th>
                         </tr>
-
                         @endforeach
                     </table>
                 </div>

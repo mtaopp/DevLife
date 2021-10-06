@@ -6126,7 +6126,6 @@ readers do not read off random characters that represent icons */
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: black;
   font-size: 2vh;
   padding: 1vh;
 }
@@ -6141,9 +6140,15 @@ readers do not read off random characters that represent icons */
   text-decoration: none;
 }
 
+.login.drop {
+  border-radius: 0.5vh;
+}
+
 .login-Button {
   border: none;
   border-radius: 0.5vh;
+  background-color: #c7bb8f;
+  color: white;
 }
 .login-Button button {
   border: none;
@@ -6152,6 +6157,23 @@ readers do not read off random characters that represent icons */
 .login-Button button .login-Login {
   width: 80px;
   overflow: hidden;
+  background-color: #c7bb8f;
+  color: white;
+}
+
+.login-arrow {
+  border: none;
+  background-color: #c7bb8f;
+  color: white;
+  width: 50px;
+}
+
+.search {
+  border: none;
+  border-radius: 0.5vh;
+  width: 80px;
+  background-color: #c7bb8f;
+  color: white;
 }
 
 html {
@@ -6213,8 +6235,6 @@ html .row {
 }
 
 footer {
-  background-color: black;
-  color: #c7bb8f;
   flex-direction: column;
   height: 10vh;
 }
@@ -6319,6 +6339,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .entry-login .login-input {
   display: flex;
@@ -6357,10 +6378,12 @@ footer {
   height: 50px;
   width: 80px;
   transition: 0.5s;
+  background-color: #c7bb8f;
+  color: white;
 }
 .entry-login .login-input .EP .L button:hover {
-  background-color: #408ff7;
-  color: white;
+  background-color: #cde1e4;
+  color: black;
 }
 
 .register-logo {
@@ -6374,7 +6397,6 @@ footer {
 .entry-register {
   display: flex;
   justify-content: center;
-  background-color: #d0d7dd;
   font-size: 15px;
   text-align: center;
 }
@@ -6391,10 +6413,6 @@ footer {
 }
 .entry-register .FLU .U {
   float: left;
-}
-
-.register {
-  background-color: #d0d7dd;
 }
 
 .EPCP {
@@ -6423,10 +6441,12 @@ footer {
   height: 50px;
   width: 80px;
   transition: 0.5s;
+  background-color: #c7bb8f;
+  color: white;
 }
 .register-button .button:hover {
-  background-color: #408ff7;
-  color: white;
+  background-color: #cde1e4;
+  color: black;
 }
 
 #letterD, #letterE, #letterV, #letterSlash, #letterL, #letterI, #letterF, #letterE2, #curlyOpen, #curlyClose {

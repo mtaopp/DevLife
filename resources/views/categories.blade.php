@@ -2,15 +2,11 @@
     <x-slot name="header">
 
     </x-slot>
-
     <div class="entryTitle container">
         <main role="main" class="entryTitle">
             <section class="text-center">
                 {{-- NEWSLETTER FORM --}}
-
                 <h1>Categories</h1>
-
-
             </section>
         </main><!-- /.entryTitle -->
     </div>

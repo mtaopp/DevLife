@@ -3,7 +3,6 @@
     </x-slot>
 
     <main>
-
             <!-- <div class="container container-full">
                     <div class="container-main">
                         <div class="post-container">
@@ -29,31 +28,26 @@
             <ul>
                 <li class="col-sm-12" id="article">
                     <div class="col-sm-12"  id="entryTitle">
-                            <h2 class="articleTitle">{{ $article->title }}</h2>
+                        <h2 class="articleTitle">{{ $article->title }}</h2>
                         <span class="cr-by">created by {{ $author[$article->author] }}</span> 
                         <div class="timestamp">
                             <span class="entryDetails">{{ $article->created_at->diffForHumans() }}</span>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-sm-6" id="entryImage">
                             <img src=" {{ $article->image }}" alt="" class="entryImage" >
                         </div>
-                    </div>
-                    
+                    </div>                   
                     <div class="row">
                         <div class="col-sm-12"  id="entryContent">
                             {{ $article->description}}
                             {{ $article->content }}
                         </div>
                     </div>
-
-                    
                 </li>
                 <hr>
             </ul>
-         
         </section>   
     </main>
 </x-app-layout>
