@@ -14,15 +14,15 @@
                 <form class="login-input" method="POST" action="{{ route('login') }}">
                     @csrf
                     <!-- Email Address -->
-                    <div class="EP">    
+                    <div class="EP">
                         <div class="E">
+                            <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus /><br>
                             <x-label for="email" :value="__('Email')" />
-                            <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
                         </div>
                         <!-- Password -->
                         <div class="P">
+                            <x-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" /><br>
                             <x-label for="password" :value="__('Password')" />
-                            <x-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" />
                         </div>
                         <!-- Remember Me -->
                         <div class="RM block">

@@ -20,7 +20,7 @@
     </head>
     <body>
       <!-- back to top button -->
-      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up fa-2x"></i></button>
       <!-- back to the top button end -->
         <div>
             @include('layouts.navigation')
