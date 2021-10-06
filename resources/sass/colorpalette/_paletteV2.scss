@@ -4,6 +4,29 @@ $color2: rgba(208,215,221,1);
 $color3: rgba(0, 0, 0, 1);
 $color4: rgba(236, 238, 226, 1);
 $color5: rgba(243, 243, 243, 1);
+$colorMainDiv: rgba(228, 226, 226,  1); //#e4e2e2
+$colorFooterGrey: #c5c5c5;
+/*$colorCarousel: 
+$color*/
+
+//body-entry
+html{
+  scroll-behavior: smooth;
+  body{
+      background-color:$colorMainDiv;
+      background: linear-gradient(to bottom, #f3f3f3, #cecece, #c5c5c5);
+  }
+}
+
+.maindiv{
+  min-height:100vh;
+  background-color:$colorMainDiv;
+}
+.card{
+  background-color: #cacaca;
+  border: none;
+}
+//body-end
 
 
 //navbar-entry
@@ -32,34 +55,69 @@ background: radial-gradient(circle, rgba(199,187,143,1) 12%, rgba(220,210,173,1)
   }
 }
 
+.loginButton{
+  margin-left: 10.5vh;
+  margin-right: 10.5vh;
+  border: block 0;;
+}
+
 .dashboard{
   width: 15vh;
 }
 //navbar-end
-//body-entry
-html{
-  body{
-      background-color:$color2;
-  }
+
+
+//Carousel
+.carousel{
+  background-color:#cacaca; 
 }
 
-.maindiv{
-  min-height:100vh;
-  background-color:$color2;
+.carousel-item{
+align-items: center;
 }
-.card{
-  background-color: $color2;
-  border: none;
+//Carousel End
+
+
+//Article Posts 
+.entryImage{
+  width: 50vh;
+  height: 35vh;
+  padding-right: 1vh;
+  float: left;
 }
-//body-end
+.entryContent{
+  margin-top: 2vh;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+// Gallery
+.entryGallerie{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-img-top{         
+  width: 30vh;
+  height: 20vh;         
+  align-items: center;
+  padding: auto;
+  margin-right: 5vh;
+  margin-left: 5vh;
+}
+
+
 //footer-entry
 footer {
   background-color: $color1;
   color: $color3;
   flex-direction: column;
   background: $color1;
-  background: linear-gradient(90deg, $color2 0%, $color2 5%, $color1 22%, $color1 78%, $color2 95%, $color2 100%);
-
+  background: linear-gradient(90deg, $colorFooterGrey 0%, $colorFooterGrey 5%, $color1 22%, $color1 78%, $colorFooterGrey 95%, $colorFooterGrey 100%);
+  //background: linear-gradient(90deg, $color2 0%, $color2 5%, $color1 22%, $color1 78%, $color2 95%, $color2 100%);
+  
 }
 
 

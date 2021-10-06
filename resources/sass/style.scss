@@ -44,14 +44,14 @@ body {
 }
 
 #myBtn {
-  background-image: linear-gradient(to right, #1e130c 0%, #9a8478  51%, #1e130c  100%);
+  background-image: linear-gradient(to right, #c7bb8f 0%, #999998  51%, #c7bb8f 100%);
   margin: 10px;
   padding: 15px 45px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
-  color: white;            
+  color: rgb(231, 231, 231);            
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   display: block;
@@ -63,13 +63,13 @@ body {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
+  
   cursor: pointer;
   &:hover {
     background-position: right center; /* change the direction of the change here */
-    color: #fff;
+    color: rgb(233, 233, 233);
     text-decoration: none;
-    background-color: #555;
+    background-color: #c7bb8f;
 }
 }
 
