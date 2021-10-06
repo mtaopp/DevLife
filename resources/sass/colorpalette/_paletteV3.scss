@@ -1,30 +1,30 @@
-$color1: #7a7a7a;
-$color2: #d0e8ba;
-$color3: #95c1ed;
-$color4: #efe9bd;
-$color5: #5c5b5b;
-//navbar-entry
+// RGBA color palette (alpha channel for opacity)
+$color1: #0000FF;
+$color2: #002DB3;
+$color3: #BFCFFF;
+$color4: #809FFF;
+$color5: rgba(243, 243, 243, 1);
 
+
+//navbar-entry
 #letterD,#letterE,#letterV,#letterSlash,#letterL,#letterI,#letterF,#letterE2,#curlyOpen,#curlyClose{
-    stroke: $color3;
+  stroke: $color2; 
 }
 .navbar{
   display: flex;
   justify-content: space-between;
-  background-color:$color3;
-  
 }
 
 #navbar-link{
   a{
-    color:$color4;
+    color:$color3;
     text-decoration: none;
   }
 }
 
 #navbar{
   a{
-    color:$color4;
+    color:$color3;
     text-decoration: none;
   }
 }
@@ -39,39 +39,29 @@ html{
       background-color:$color2;
   }
 }
-
+#article{
+ list-style: none;
+}
 .maindiv{
   min-height:100vh;
   background-color:$color2;
 }
+.card{
+  background-color: $color2;
+  border: none;
+}
 //body-end
 //footer-entry
 footer {
-  background-color: $color3;
-  color: $color4;
+  background-color: $color1;
+  color: $color3;
   flex-direction: column;
+  background: $color1;
 }
 
-.footdiv-icon{
-  height:1vh;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  padding-left: 7vh;
-  padding-right: 7vh;
-  font-size: 5vh;
-}
-.footdiv{
-  height:1vh;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  display: flex;
-  justify-content: space-around;
-  
-  
-}
 
 #footer-icon1,#footer-icon2,#footer-icon3,#footer-icon4{
-  color: $color4;
+  color: $color3;
 }
 
 //footer-end

@@ -198,14 +198,11 @@
                       </div>
                     </div>
                   </div>
-
-
                   <div class="col-md-4">
                     <div class="card mb-4 box-shadow">
                     <img src="{{ $article[3]->image}}" alt="" class="card-img-top img-fluid rounded mx-auto entryImage">
                       <div class="card-body">
                         {{ $article[3]->description}}
-
                         {{\Illuminate\Support\Str::limit($article[3]->content, 50)}}
                         @if (strlen($article[3]->conent) > 50)
                             <span id="ellipses">...</span>
@@ -220,14 +217,11 @@
                       </div>
                     </div>
                   </div>
-
-
                   <div class="col-md-4">
                     <div class="card mb-4 box-shadow">
                     <img src="{{ $article[4]->image}}" alt="" class="card-img-top img-fluid rounded mx-auto entryImage">
                       <div class="card-body">
                         {{ $article[4]->description}}
-
                         {{\Illuminate\Support\Str::limit($article[4]->content, 50)}}
                         @if (strlen($article[4]->conent) > 50)
                             <span id="ellipses">...</span>
@@ -248,7 +242,6 @@
                     <img src="{{ $article[5]->image}}" alt="" class="card-img-top img-fluid rounded mx-auto entryImage">
                       <div class="card-body">
                         {{ $article[5]->description}}
-
                         {{\Illuminate\Support\Str::limit($article[5]->content, 50)}}
                         @if (strlen($article[5]->conent) > 50)
                             <span id="ellipses">...</span>

@@ -6151,6 +6151,7 @@ readers do not read off random characters that represent icons */
 }
 .login-Button button .login-Login {
   width: 80px;
+  overflow: hidden;
 }
 
 html {
@@ -6215,6 +6216,7 @@ footer {
   background-color: black;
   color: #c7bb8f;
   flex-direction: column;
+  height: 10vh;
 }
 
 .footdiv-icon {
@@ -6236,13 +6238,16 @@ footer {
   margin-right: 2vh;
 }
 
-.profilewindow {
-  border-style: solid black;
+.userInformation {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40vh;
 }
 
-.userInformation {
-  border: solid 5px;
+.userInformationtList {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
@@ -6451,6 +6456,10 @@ footer {
 
 html body {
   background-color: #d0d7dd;
+}
+
+#article {
+  list-style: none;
 }
 
 .maindiv {

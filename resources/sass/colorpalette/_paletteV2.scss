@@ -41,7 +41,9 @@ html{
       background-color:$color2;
   }
 }
-
+#article{
+ list-style: none;
+}
 .maindiv{
   min-height:100vh;
   background-color:$color2;

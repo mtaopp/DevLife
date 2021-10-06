@@ -8,11 +8,10 @@
             <section class="d-flex justify-content-center">
                 <div class="userInformation w-100">
 
-                    <div class="row w-100">
+                    <div class="userInformationtList row w-100">
                         <div class="col-md-5 ">
                             <div class="userImage row">
                                 <div class="d-flex flex-column-reverse flex-wrap flex-shrink">
-                                    
                                     <a href="{{ route('changePassword') }}"><h4 class="text-nowrap">Change Password</h4></a>
                                     <a href="{{ route('changeImage') }}"><h4>Change Image</h4></a>
                                     <i class="userImage far fa-user fa-9x"></i>
@@ -26,8 +25,7 @@
                                 <div class="col-md-12">Firstname: {{$firstname}}</div>
                                 <div class="col-md-12">Lastname: {{$lastname}}</div>
                                 <div class="col-md-12">Email: {{$email}}</div>
-                                <div class="col-md-12">Role: Administration/Front-End</div>
-                            </p>
+                                </p>
                         </div>
                         <div>
                             <p class="userBio"></p>
