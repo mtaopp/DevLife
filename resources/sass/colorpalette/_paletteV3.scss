@@ -1,0 +1,67 @@
+// RGBA color palette (alpha channel for opacity)
+$color1: #0000FF;
+$color2: #002DB3;
+$color3: #BFCFFF;
+$color4: #809FFF;
+$color5: rgba(243, 243, 243, 1);
+
+
+//navbar-entry
+#letterD,#letterE,#letterV,#letterSlash,#letterL,#letterI,#letterF,#letterE2,#curlyOpen,#curlyClose{
+  stroke: $color2; 
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar-link{
+  a{
+    color:$color3;
+    text-decoration: none;
+  }
+}
+
+#navbar{
+  a{
+    color:$color3;
+    text-decoration: none;
+  }
+}
+
+.dashboard{
+  width: 15vh;
+}
+//navbar-end
+//body-entry
+html{
+  body{
+      background-color:$color2;
+  }
+}
+#article{
+ list-style: none;
+}
+.maindiv{
+  min-height:100vh;
+  background-color:$color2;
+}
+.card{
+  background-color: $color2;
+  border: none;
+}
+//body-end
+//footer-entry
+footer {
+  background-color: $color1;
+  color: $color3;
+  flex-direction: column;
+  background: $color1;
+}
+
+
+#footer-icon1,#footer-icon2,#footer-icon3,#footer-icon4{
+  color: $color3;
+}
+
+//footer-end

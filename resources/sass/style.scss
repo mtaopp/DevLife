@@ -1,83 +1,26 @@
 @import 'imports';
 @import 'variables';
 
+
 @import 'header';
 @import 'navbar';
 @import 'main';
+@import 'articles';
 @import 'footer';
+@import 'profile';
+@import 'login';
+@import 'colorpalette/paletteV2';//there is the more paletteV1-V4
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
 }
-
-#navbar{
-  background-color:black;
-  a{
-    color:#c7bb8f;
-    text-decoration: none;
-  }
+.bttimg{
+  border-radius: 50%;
+  position:fixed;
+  bottom:2vh;
+  right:2vh;
 }
-
-html{
-    body{
-        background-color:#f3f3f3;
-    }
-}
-footer {
-  text-align: center;
-  display:flex;
-  background-color: rgb(0, 0, 0);
-  color: #c7bb8f;
-}
-
-.footdiv{
-  flex:1;
-  height:60px;
-  padding:50px;
-}
-
-.maindiv{
-  min-height:100vh;
-  background-color:#adb1b5;
-}
-
-.navbar{
-  background-color:rgb(85, 85, 85);
-}
-
-#letterD{
-  stroke: #c7bb8f;
-}
-#letterE{
-  stroke: #c7bb8f;
-}
-#letterV{
-  stroke: #c7bb8f;
-}
-#letterSlash{
-  stroke: #c7bb8f;
-}
-#letterL{
-  stroke: #c7bb8f;
-}
-#letterI{
-  stroke: #c7bb8f;
-}
-#letterF{
-  stroke: #c7bb8f;
-}
-#letterE2{
-  stroke: #c7bb8f;
-}
-#curlyOpen{
-  stroke: #c7bb8f;
-}
-#curlyClose{
-  stroke: #c7bb8f;
-}
-
 @media (max-width: 700px) {
   .leftdiv{
     display:none;
@@ -87,3 +30,51 @@ footer {
   }
 
 }
+@media (max-width: 700px) {
+  .leftdiv{
+    display:none;
+  }
+  .rightdiv{
+    display:none;
+  }
+}
+
+
+//back to top button
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  background-image: linear-gradient(to right, #1e130c 0%, #9a8478  51%, #1e130c  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  cursor: pointer;
+  &:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    background-color: #555;
+}
+}
+
+//back to top button end
+

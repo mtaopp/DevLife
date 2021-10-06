@@ -1,0 +1,102 @@
+Facebook
+    <i class="fab fa-facebook-square"></i>
+    <i class="fab fa-facebook"></i>
+
+Youtube
+    <i class="fab fa-youtube-square"></i>
+    <i class="fab fa-youtube"></i>
+
+Twitter
+    <i class="fab fa-twitter-square"></i>
+    <i class="fab fa-twitter"></i>
+
+Instagram
+    <i class="fab fa-instagram-square"></i>
+    <i class="fab fa-instagram"></i>
+
+TikTok
+    <i class="fab fa-tiktok"></i>
+
+"MediaPlayer"
+    <i class="fas fa-step-backward"></i>
+    <i class="fas fa-fast-backward"></i>
+    <i class="fas fa-backward"></i>
+    <i class="fas fa-eject"></i>
+    <i class="fas fa-stop"></i>
+    <i class="fas fa-play"></i>
+    <i class="fas fa-circle"></i>
+    <i class="fas fa-step-forward"></i>
+    <i class="fas fa-forward"></i>
+    <i class="fas fa-fast-forward"></i>
+
+Edit
+    <i class="fas fa-edit"></i>
+    <i class="far fa-edit"></i>
+
+File / Article
+    <i class="fas fa-file"></i>
+    <i class="far fa-file"></i>
+
+    <i class="fas fa-file-alt"></i>
+    <i class="far fa-file-alt"></i>
+
+Folder / Category
+    <i class="far fa-folder"></i>
+    <i class="fas fa-folder"></i>
+
+    <i class="far fa-folder-open"></i>
+    <i class="fas fa-folder-open"></i>
+
+    <i class="fas fa-folder-plus"></i>
+
+Copyright
+    <i class="far fa-copyright"></i>
+    <i class="fas fa-copyright"></i>
+
+Calendar
+    <i class="far fa-calendar-alt"></i>
+    <i class="fas fa-calendar-alt"></i>
+    <i class="fas fa-calendar"></i>
+    <i class="far fa-calendar"></i>
+
+coffee
+    <i class="fas fa-mug-hot"></i>
+    <i class="fas fa-coffee"></i>
+
+Comment
+    <i class="fas fa-comment"></i>
+    <i class="far fa-comment"></i>
+    <i class="fas fa-comment-alt"></i>
+    <i class="far fa-comment-alt"></i>
+    <i class="fas fa-comment-dots"></i>
+    <i class="far fa-comment-dots"></i>
+    <i class="fas fa-comments"></i>
+    <i class="far fa-comments"></i>
+
+Secret
+    <i class="fas fa-user-secret"></i>
+
+Shield
+    <i class="fas fa-shield-alt"></i>
+
+Email @
+    <i class="fas fa-at"></i>
+
+User
+    <i class="fas fa-user"></i>
+    <i class="far fa-user"></i>
+    <i class="fas fa-user-shield"></i>
+    <i class="fas fa-user-plus"></i>
+    <i class="fas fa-user-times"></i>
+    <i class="fas fa-user-edit"></i>
+    <i class="fas fa-user-check"></i>
+
+    Div. Icons
+        <i class="fas fa-address-card"></i>
+        <i class="far fa-address-card"></i>
+        <i class="fas fa-id-card"></i>
+        <i class="far fa-id-card"></i>
+        <i class="fas fa-id-card-alt"></i>
+
+Power off / Logout?
+    <i class="fas fa-power-off"></i>

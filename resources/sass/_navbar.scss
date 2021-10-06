@@ -1,0 +1,31 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  background-color:black;
+  font-size: 2vh;
+  padding: 1vh;
+}
+#navbar-link{
+  a{
+    color:#c7bb8f;
+    text-decoration: none;
+  }
+}
+#navbar{
+  a{
+    color:#c7bb8f;
+    text-decoration: none;
+  }
+}
+.login-Button{
+  border: none;
+  border-radius: 0.5vh;
+  button{
+    border:none;
+    border-radius: 0.5vh;
+    .login-Login{
+      width: 80px;
+      overflow: hidden;
+    }
+  }
+}
