@@ -6,7 +6,7 @@ $color4: rgba(236, 238, 226, 1);
 $color5: rgba(243, 243, 243, 1);
 $colorMainDiv: rgba(228, 226, 226,  1); //#e4e2e2
 $colorFooterGrey: #c5c5c5;
-/*$colorCarousel: 
+/*$colorCarousel:
 $color*/
 
 //body-entry
@@ -31,7 +31,7 @@ html{
 
 //navbar-entry
 #letterD,#letterE,#letterV,#letterSlash,#letterL,#letterI,#letterF,#letterE2,#curlyOpen,#curlyClose{
-  stroke: $color2; 
+  stroke: $color2;
 }
 .navbar{
   display: flex;
@@ -61,24 +61,28 @@ html{
 .dashboard{
   width: 15vh;
 }
-//navbar-end
-
-
 //Carousel
 .carousel{
-  background-color:#cacaca; 
+  background-color:#cacaca;
 }
+//navbar-end
+
 #article{
  list-style: none;
 }
 .maindiv{
   min-height:100vh;
   background-color:$color2;
+
+
+
+.carousel-item{
+align-items: center;
 }
 //Carousel End
 
 
-//Article Posts 
+//Article Posts
 .entryImage{
   width: 50vh;
   height: 35vh;
@@ -99,9 +103,9 @@ html{
   flex-wrap: wrap;
 }
 
-.card-img-top{         
+.card-img-top{
   width: 30vh;
-  height: 20vh;         
+  height: 20vh;
   align-items: center;
   padding: auto;
   margin-right: 5vh;
@@ -117,7 +121,7 @@ footer {
   background: $color1;
   background: linear-gradient(90deg, $colorFooterGrey 0%, $colorFooterGrey 5%, $color1 22%, $color1 78%, $colorFooterGrey 95%, $colorFooterGrey 100%);
   //background: linear-gradient(90deg, $color2 0%, $color2 5%, $color1 22%, $color1 78%, $color2 95%, $color2 100%);
-  
+
 }
 #footer-icon1,#footer-icon2,#footer-icon3,#footer-icon4{
   color: $color3;
