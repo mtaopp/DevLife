@@ -6154,6 +6154,60 @@ readers do not read off random characters that represent icons */
   overflow: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+html body {
+  background-color: #dcd2ad;
+}
+html .row {
+  margin-left: 0;
+}
+
+.loginButton {
+  margin-left: 10.5vh;
+  margin-right: 10.5vh;
+  border: block 0;
+}
+
+.carousel {
+  background-color: #c0c6cc;
+}
+
+.maindiv {
+  min-height: 100vh;
+  background-color: #afafaf;
+  padding: 0;
+}
+
+.entryImage {
+  width: 50vh;
+  height: 35vh;
+  padding-right: 1vh;
+  float: left;
+}
+
+.entryContent {
+  margin-top: 2vh;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.entryGallerie {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-img-top {
+  width: 30vh;
+  height: 20vh;
+  align-items: center;
+  padding: auto;
+  margin-right: 5vh;
+  margin-left: 5vh;
+}
+
 footer {
   flex-direction: column;
   height: 10vh;
@@ -6178,24 +6232,18 @@ footer {
   margin-right: 2vh;
 }
 
-<<<<<<< HEAD
-/*.profilewindow{
-}*/
-.userInformation {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40vh;
-}
-
-.userInformationtList {
-=======
 .profilewindow {
   border: none;
 }
 
 .userInformation {
   border: none;
->>>>>>> UCfront
+  display: flex;
+  align-items: center;
+  margin-bottom: 40vh;
+}
+
+.userInformationtList {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -6266,7 +6314,6 @@ footer {
   align-items: baseline;
 }
 
-<<<<<<< HEAD
 .entry-login {
   display: flex;
   flex-direction: row;
@@ -6381,9 +6428,7 @@ footer {
   color: black;
 }
 
-=======
->>>>>>> UCfront
-/*$colorCarousel: 
+/*$colorCarousel:
 $color*/
 html {
   scroll-behavior: smooth;
@@ -6436,13 +6481,15 @@ html body {
 
 .carousel {
   background-color: #cacaca;
-<<<<<<< HEAD
 }
 
 #article {
   list-style: none;
-=======
->>>>>>> UCfront
+}
+
+.maindiv {
+  min-height: 100vh;
+  background-color: #d0d7dd;
 }
 
 .carousel-item {
