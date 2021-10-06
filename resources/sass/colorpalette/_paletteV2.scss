@@ -61,24 +61,23 @@ html{
 .dashboard{
   width: 15vh;
 }
+//navbar-end
+
 //Carousel
 .carousel{
   background-color:#cacaca;
 }
-//navbar-end
-
 #article{
  list-style: none;
 }
 .maindiv{
   min-height:100vh;
   background-color:$color2;
-
-
+}
 
 .carousel-item{
-align-items: center;
-}
+    align-items: center;
+    }
 //Carousel End
 
 
