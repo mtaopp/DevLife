@@ -30,7 +30,7 @@
                         <a class="nav-link text-center align-self-center" href="{{ route('control-panel') }}">Admin-Panel</a>
                     </li>
                     @endhasrole
-                    <form action="{{ route('search') }}" method="GET">
+                    <form action="{{ route('search') }}" method="GET"  class=" align-self-center">
                         <input type="text" name="search" required/>
                         <button name="submit" class="search" type="submit">Search</button>
                     </form>
