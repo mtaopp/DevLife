@@ -55,7 +55,7 @@
                         </div>
                     </div>
                     <div class="timestamp">
-                        <span class="entryDetails">{{ $news[0]->created_at->diffForHumans() }}</span>
+                        <span class="entryDetails"></span>
                     </div>
                 </li>
                     <hr>
@@ -83,7 +83,7 @@
                         </div>
 
                         <div class="timestamp">
-                            <span class="entryDetails">{{ $article[1]->created_at->diffForHumans() }}</span>
+                            <span class="entryDetails"></span>
                         </div>
                     </li>
                     <hr>
@@ -110,7 +110,7 @@
                             </div>
                         </div>
                         <div class="timestamp">
-                            <span class="entryDetails">{{ $article[2]->created_at->diffForHumans() }}</span>
+                            <span class="entryDetails"></span>
                         </div>
                     </li>
                     <hr>
@@ -140,7 +140,7 @@
                           <div class="btn-group">
                           <a href="/article/{{$article[0]->id}}">Read more</a>
                           </div>
-                          <small><span class="entryDetails">{{ $article[0]->created_at->diffForHumans() }}</span></small>
+                          <small><span class="entryDetails"></span></small>
                         </div>
                       </div>
                     </div>
@@ -162,7 +162,7 @@
                           <div class="btn-group">
                           <a href="/article/{{$article[1]->id}}">Read more</a>
                           </div>
-                          <small><span class="entryDetails">{{ $article[1]->created_at->diffForHumans() }}</span></small>
+                          <small><span class="entryDetails"></span></small>
                         </div>
                       </div>
                     </div>
@@ -184,7 +184,7 @@
                           <div class="btn-group">
                           <a href="/article/{{$article[2]->id}}">Read more</a>
                           </div>
-                          <small><span class="entryDetails">{{ $article[2]->created_at->diffForHumans() }}</span></small>
+                          <small><span class="entryDetails"></span></small>
                         </div>
                       </div>
                     </div>
@@ -206,7 +206,7 @@
                           <div class="btn-group">
                           <a href="/article/{{$article[3]->id}}">Read more</a>
                           </div>
-                          <small><span class="entryDetails">{{ $article[3]->created_at->diffForHumans() }}</span></small>
+                          <small><span class="entryDetails"></span></small>
                         </div>
                       </div>
                     </div>
@@ -228,7 +228,7 @@
                           <div class="btn-group">
                           <a href="/article/{{$article[4]->id}}">Read more</a>
                           </div>
-                          <small><span class="entryDetails">{{ $article[4]->created_at->diffForHumans() }}</span></small>
+                          <small><span class="entryDetails"></span></small>
                         </div>
                       </div>
                     </div>
@@ -249,7 +249,7 @@
                           <div class="btn-group">
                           <a href="/article/{{$article[5]->id}}">Read more</a>
                           </div>
-                          <small><span class="entryDetails">{{ $article[5]->created_at->diffForHumans() }}</span></small>
+                          <small><span class="entryDetails"></span></small>
                         </div>
                       </div>
                     </div>

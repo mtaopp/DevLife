@@ -8,6 +8,7 @@
 @import 'profile';
 @import 'login';
 
+
 * {
     margin: 0;
     padding: 0;
@@ -76,3 +77,33 @@ body {
 #more {display: none;}
 
 //back to top button end
+
+//search button
+
+#btnSearch{
+  background-image: linear-gradient(to right, #c0b48a 0%, #999998  51%, #c7bb8f 100%);
+  margin: 8px;
+  padding: 8px 12px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(238, 238, 238);
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  
+  z-index: 99;
+  font-size: 13px;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+  &:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+    background-color: #c7bb8f;
+}
+}
+
+//button log in

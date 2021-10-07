@@ -39,7 +39,7 @@
                             </div>
                         </div>
                         <div class="timestamp">
-                            <span class="articleDetails">{{ $article->created_at->diffForHumans() }}</span>
+                            <span class="articleDetails"></span>
                         </div>
                     </li>
                     <hr>

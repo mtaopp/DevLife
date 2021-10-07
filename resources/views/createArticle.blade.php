@@ -32,7 +32,7 @@
                                                 <div class="create-title">
                                                     <div class=" ">
                                                         <x-label hidden for="title" :value="__('Title')" />
-                                                        <x-input type="text" placeholder="Title of you'r Post" name="title" id="title" required />
+                                                        <x-input type="text" placeholder="Title of your Post" name="title" id="title" required />
                                                     </div>
                                                 </div>
                                                 <div class="create-description">
@@ -41,7 +41,7 @@
                                                 </div>
                                                 <div class="create-fileName">
                                                     <x-label hidden for="filename" :value="__('File Name')" />
-                                                    <x-input class="create-fileName" type="text" placeholder="File Name" name="filename" id="tifilenametle" required />
+                                                    <x-input class="create-fileName" type="text" placeholder="Change Image Name" name="filename" id="tifilenametle" required />
                                                 </div>
                                                 <div class="create-images">
                                                     <label class="" for="image"></label>
