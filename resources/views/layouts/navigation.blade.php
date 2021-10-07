@@ -30,10 +30,11 @@
                         <a class="nav-link text-center align-self-center" href="{{ route('control-panel') }}">Admin-Panel</a>
                     </li>
                     @endhasrole
-                    <form action="{{ route('search') }}" method="GET"  class=" align-self-center">
+                    <form action="{{ route('search') }}" method="GET" class="align-self-center">
                         <input type="text" name="search" required/>
                         <button name="submit" class="search" id="btnSearch" type="submit">Search</button>
                     </form>
+
                 </ul>
             </div>
             <!-- Settings Dropdown -->
@@ -41,6 +42,7 @@
                 <div class="login-drop">
                     <x-dropdown width="48">
                         <x-slot name="trigger">
+
                             <button class="d-flex flex-row-reverse">
                                 <div class="login-Login">{{ Auth::check() ? (Auth::user()->username) : "Log in" }}</div>
                                 <div class="login-arrow">
@@ -50,7 +52,7 @@
                         </x-slot>
                         <x-slot name="content">
                                 <!-- Authentication -->
-                                <form method="POST" action="{{ route('logout') }}">
+                                <form method="POST" class="dropdown-list" action="{{ route('logout') }}">
                                     @csrf
                                     @if (!Auth::check())
                                     <x-dropdown-link :href="route('login')">
