@@ -40,7 +40,7 @@
                         </div>
                         <div class="timestamp">
                             <span class="entryDetails"></span>
-                        </div>
+                     </div>
                     </li>
                     <hr>
                     @endforeach
