@@ -32,7 +32,7 @@
                     @endhasrole
                     <form action="{{ route('search') }}" method="GET"  class=" align-self-center">
                         <input type="text" name="search" required/>
-                        <button name="submit" class="search" type="submit">Search</button>
+                        <button name="submit" class="search" id="btnSearch" type="submit">Search</button>
                     </form>
                 </ul>
             </div>

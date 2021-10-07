@@ -39,7 +39,7 @@
 
 //back to top button
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 20px;
 }
 
@@ -73,6 +73,51 @@ body {
 }
 }
 
-#more {display: none;}
+a {
+  color: $color-dark;
+  text-decoration: none;
+}
+
+#entry-content a{
+  color: $color-dark;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4{
+  font-family: 'Slabo 13px', serif;
+  font-weight: bold;
+  color:$color-dark;
+}
 
 //back to top button end
+
+#btnSearch{
+  background-image: linear-gradient(to right, #c0b48a 0%, #999998  51%, #c7bb8f 100%);
+  margin: 8px;
+  padding: 8px 12px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(238, 238, 238);
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  
+  z-index: 99;
+  font-size: 13px;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+  &:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+    background-color: #c7bb8f;
+}
+}
+
+//button log in

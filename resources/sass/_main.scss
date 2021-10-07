@@ -13,8 +13,12 @@ html{
     border: block 0;
 }
 .carousel{
-    background-color: $bg-carousel;
-}
+    background: rgb(245,245,245);
+    background: linear-gradient(90deg, rgb(231, 231, 231) 7%, rgb(190, 190, 190) 52%, rgb(231, 231, 231) 93%);
+}   
+.carousel-item{
+    align-items: center;
+    }
 .maindiv{
     min-height:100vh;
     background-color:#afafaf;
@@ -46,6 +50,4 @@ html{
     margin-right: 5vh;
     margin-left: 5vh;
 }
-.carousel-item{
-align-items: center;
-}
+

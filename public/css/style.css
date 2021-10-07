@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Slabo+13px&display=swap);
+/*$bg-carousel: rgba(223, 233, 241, 1);*/
 /*$colorCarousel:
 $color*/
 .carousel-control-next-icon {
@@ -9,7 +11,7 @@ html {
 }
 html body {
   background-color: #e4e2e2;
-  background: linear-gradient(to bottom, #f3f3f3, #cecece, #c5c5c5);
+  background: linear-gradient(to bottom, #f5f5f5, #dbdbdb, #c5c5c5);
 }
 
 .maindiv {
@@ -18,7 +20,8 @@ html body {
 }
 
 .card {
-  background-color: #cacaca;
+  background-color: #c7c7c7;
+  /*#cacaca;*/
   border: none;
 }
 
@@ -6241,7 +6244,7 @@ readers do not read off random characters that represent icons */
 }
 
 #navbar a {
-  color: #c7bb8f;
+  color: #444444;
   text-decoration: none;
 }
 
@@ -6275,7 +6278,12 @@ html .row {
 }
 
 .carousel {
-  background-color: #dfe9f1;
+  background: whitesmoke;
+  background: linear-gradient(90deg, #e7e7e7 7%, #bebebe 52%, #e7e7e7 93%);
+}
+
+.carousel-item {
+  align-items: center;
 }
 
 .maindiv {
@@ -6310,10 +6318,6 @@ html .row {
   padding: auto;
   margin-right: 5vh;
   margin-left: 5vh;
-}
-
-.carousel-item {
-  align-items: center;
 }
 
 footer {
@@ -6454,15 +6458,15 @@ footer {
 }
 .entry-login .login-input .EP .L button {
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   height: 50px;
   width: 80px;
   transition: 0.5s;
-  background-color: #c7bb8f;
-  color: white;
+  background-color: #c2b68c;
+  color: #e4e4e4;
 }
 .entry-login .login-input .EP .L button:hover {
-  background-color: #cde1e4;
+  background-color: #bdbdbd;
   color: black;
 }
 
@@ -6523,6 +6527,7 @@ footer {
   transition: 0.5s;
   background-color: #c7bb8f;
   color: white;
+  z-index: 99;
 }
 .register-button .button:hover {
   background-color: #cde1e4;
@@ -6560,7 +6565,7 @@ footer {
   }
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 20px;
 }
 
@@ -6594,6 +6599,46 @@ body {
   background-color: #c7bb8f;
 }
 
-#more {
-  display: none;
+a {
+  color: #2c2c2c;
+  text-decoration: none;
+}
+
+#entry-content a {
+  color: #2c2c2c;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Slabo 13px", serif;
+  font-weight: bold;
+  color: #2c2c2c;
+}
+
+#btnSearch {
+  background-image: linear-gradient(to right, #c0b48a 0%, #999998 51%, #c7bb8f 100%);
+  margin: 8px;
+  padding: 8px 12px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #eeeeee;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  z-index: 99;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#btnSearch:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #e9e9e9;
+  text-decoration: none;
+  background-color: #c7bb8f;
 }
