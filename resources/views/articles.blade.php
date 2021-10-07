@@ -39,8 +39,8 @@
                             </div>
                         </div>
                         <div class="timestamp">
-                            <span class="entryDetails">{{ $article->created_at->diffForHumans() }}</span>
-                        </div>
+                            <span class="entryDetails"></span>
+                     </div>
                     </li>
                     <hr>
                     @endforeach
