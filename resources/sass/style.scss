@@ -39,8 +39,8 @@
 
 //back to top button
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 30px;
 }
 
 #myBtn {
@@ -73,6 +73,17 @@ body {
 }
 }
 
-#more {display: none;}
+a {
+  color: $color-dark;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4{
+  font-weight: bold;
+  color:$color-dark;
+}
 
 //back to top button end
