@@ -1,9 +1,14 @@
-.profilewindow{
-    border-style: solid black;
-}
+/*.profilewindow{
+}*/
 .userInformation{
-    border: solid 5px;
     display: flex;
+    align-items: center;
+    margin-bottom: 40vh;
+}
+.userInformationtList{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 .userImage{

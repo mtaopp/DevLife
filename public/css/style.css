@@ -1,3 +1,28 @@
+
+/*$colorCarousel:
+$color*/
+.carousel-control-next-icon {
+  color: #c7bb8f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html body {
+  background-color: #e4e2e2;
+  background: linear-gradient(to bottom, #f3f3f3, #cecece, #c5c5c5);
+}
+
+.maindiv {
+  min-height: 100vh;
+  background-color: #e4e2e2;
+}
+
+.card {
+  background-color: #cacaca;
+  border: none;
+}
+
 #letterD, #letterE, #letterV, #letterSlash, #letterL, #letterI, #letterF, #letterE2, #curlyOpen, #curlyClose {
   stroke: #d0d7dd;
 }
@@ -19,12 +44,21 @@
   text-decoration: none;
 }
 
+.loginButton {
+  margin-left: 10.5vh;
+  margin-right: 10.5vh;
+  border: block 0;
+}
+
 .dashboard {
   width: 15vh;
 }
 
 html body {
   background-color: #d0d7dd;
+}
+  #article {
+  list-style: none;
 }
 
 .maindiv {
@@ -36,6 +70,33 @@ html body {
   background-color: #d0d7dd;
   border: none;
 }
+.entryImage {
+  width: 50vh;
+  height: 35vh;
+  padding-right: 1vh;
+  float: left;
+}
+
+.entryContent {
+  margin-top: 2vh;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.entryGallerie {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-img-top {
+  width: 30vh;
+  height: 20vh;
+  align-items: center;
+  padding: auto;
+  margin-right: 5vh;
+  margin-left: 5vh;
+}
 
 footer {
   background-color: #c7bb8f;
@@ -43,6 +104,7 @@ footer {
   flex-direction: column;
   background: #c7bb8f;
   background: linear-gradient(90deg, #d0d7dd 0%, #d0d7dd 5%, #c7bb8f 22%, #c7bb8f 78%, #d0d7dd 95%, #d0d7dd 100%);
+  background: linear-gradient(90deg, #c5c5c5 0%, #c5c5c5 5%, #c7bb8f 22%, #c7bb8f 78%, #c5c5c5 95%, #c5c5c5 100%);
 }
 
 #footer-icon1, #footer-icon2, #footer-icon3, #footer-icon4 {
@@ -6192,17 +6254,17 @@ readers do not read off random characters that represent icons */
   text-decoration: none;
 }
 
-.nav-item {
-  padding: 1vh;
-}
-
-.dashboard {
-  width: 15vh;
-}
-
-.loginButton {
+.login-Button {
   border: none;
   border-radius: 0.5vh;
+}
+.login-Button button {
+  border: none;
+  border-radius: 0.5vh;
+}
+.login-Button button .login-Login {
+  width: 80px;
+  overflow: hidden;
 }
 
 .mainBtn {
@@ -6237,7 +6299,7 @@ html .row {
 }
 
 .carousel {
-  background-color: #c0c6cc;
+  background-color: #dfe9f1;
 }
 
 .maindiv {
@@ -6283,9 +6345,8 @@ section li {
 }
 
 footer {
-  background-color: black;
-  color: #c7bb8f;
   flex-direction: column;
+  height: 10vh;
 }
 
 .footdiv-icon {
@@ -6307,13 +6368,18 @@ footer {
   margin-right: 2vh;
 }
 
-.profilewindow {
-  border-style: solid black;
+/*.profilewindow{
+}*/
+.userInformation {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40vh;
 }
 
-.userInformation {
-  border: solid 5px;
+.userInformationtList {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
@@ -6381,6 +6447,116 @@ footer {
   align-items: baseline;
 }
 
+.entry-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.entry-login .login-input {
+  display: flex;
+  flex-direction: column;
+}
+.entry-login .login-input .EP {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 260px;
+}
+.entry-login .login-input .EP .E {
+  justify-content: center;
+}
+.entry-login .login-input .EP .P {
+  justify-content: center;
+  margin-top: 10px;
+}
+.entry-login .login-input .EP .RM {
+  justify-content: center;
+  text-align: center;
+  margin: 0 0 2em 0;
+}
+.entry-login .login-input .EP .L {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.entry-login .login-input .EP .L button {
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 80px;
+  transition: 0.5s;
+  background-color: #c7bb8f;
+  color: white;
+}
+.entry-login .login-input .EP .L button:hover {
+  background-color: #cde1e4;
+  color: black;
+}
+
+.register-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.entry-register {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  text-align: center;
+}
+.entry-register .FLU {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.entry-register .FLU .F {
+  float: left;
+}
+.entry-register .FLU .L {
+  float: left;
+}
+.entry-register .FLU .U {
+  float: left;
+}
+
+.EPCP {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.EPCP .E {
+  float: left;
+}
+.EPCP .P {
+  float: left;
+  font-weight: bold;
+}
+.EPCP .CP {
+  float: left;
+  font-weight: bold;
+}
+
+.register-button {
+  margin-bottom: 250px;
+}
+.register-button .button {
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 80px;
+  transition: 0.5s;
+  background-color: #c7bb8f;
+  color: white;
+}
+.register-button .button:hover {
+  background-color: #cde1e4;
+  color: black;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6417,34 +6593,37 @@ body {
 }
 
 #myBtn {
-  background-image: linear-gradient(to right, #1e130c 0%, #9a8478 51%, #1e130c 100%);
+  background-image: linear-gradient(to right, #c7bb8f 0%, #999998 51%, #c7bb8f 100%);
   margin: 10px;
-  padding: 15px 45px;
+  padding: 15px 20px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
-  color: white;
+  color: #e7e7e7;
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   display: block;
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 100px;
+  right: 40px;
   z-index: 99;
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
   cursor: pointer;
 }
 #myBtn:hover {
   background-position: right center;
   /* change the direction of the change here */
-  color: #fff;
+  color: #e9e9e9;
   text-decoration: none;
-  background-color: #555;
+  background-color: #c7bb8f;
+}
+
+#more {
+  display: none;
 }
 
 #more {

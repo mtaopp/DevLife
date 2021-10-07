@@ -12,20 +12,14 @@
                             <h1>Create a new category</h1>
                             <a href="{{ route('createArticle') }}">back</a>
                         </div>
-
                         <section class="d-flex">
                                 {{-- {{ $msg }} --}}
-
-
-
                                 <form method="POST" action= "{{ route('storeCategory') }}">
                                     @csrf
                                     <div class="w-100 justify-content-center">
                                         <div class="d-flex w-100">
-
                                             <x-label class="text-nowrap" for="name" :value="__('Category')" />
                                             <x-input class="ml-2" type="text" name="name" id="name" required />
-
                                         </div>
                                         @if(session('error'))
                                              <br>

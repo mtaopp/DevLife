@@ -34,10 +34,9 @@ $color5: #ebebc6;
 //body-entry
 html{
   body{
-      background-color:$color1;
+    background-color:$color1;
   }
 }
-
 .maindiv{
   min-height:100vh;
   background-color:$color1;
@@ -45,7 +44,6 @@ html{
 .card{
   background-color: $color4;
 }
-
 //body-end
 //footer-entry
 footer {
@@ -53,7 +51,6 @@ footer {
   color: $color1;
   flex-direction: column;
 }
-
 .footdiv-icon{
   height:1vh;
   padding-top: 5vh;
@@ -70,10 +67,8 @@ footer {
   justify-content: space-around;
 
 }
-
 #footer-icon1,#footer-icon2,#footer-icon3,#footer-icon4{
   color: $color1;
 }
-
 //footer-end
 

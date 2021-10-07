@@ -23,8 +23,6 @@
                                                     required autocomplete="current_password" />
                                 </div>
                             </div>
-
-
                             <!-- Password -->
                             <div class="row mt-5">
                                 <div class="col-4">
@@ -36,10 +34,7 @@
                                                     name="password"
                                                     required autocomplete="new-password" />
                                 </div>
-
                             </div>
-
-
                             <!-- Confirm Password -->
                             <div class="row mt-5">
                                 <div class="col-4">
@@ -52,11 +47,7 @@
                                                     name="password_confirmation" required />
                                 </div>
                             </div>
-
-
                         </div>
-
-
                         <br>
                         <div class="w-100 text-center d-flex justify-content-center">
                             <button class="d-flex justify-content-center mb-4"> <i class="m-1 fas fa-user-secret text-justify"></i><h6 class="text-justify  m-1 ">Change Password</h6></button>

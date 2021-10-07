@@ -19,12 +19,8 @@
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
             </a>
             </div>
           </section>
@@ -32,42 +28,40 @@
           <hr>
           <br>
           <!-- rescent post section -->
-          <section><h1>Recent Posts</h1></section>
 
           <section id="recentArticles">
-            </ul>
-            <li class="col-sm-12" id="article">
-                <div class="col-sm-10"  id="entryTitle">
-                     <h2 class="articleTitle"><a href="/article/{{$news[0]->id}}">{{ $news[0]->title }}</a></h2>
-                    <span class="cr-by">created by {{ $author[$news[0]->author] }}</span>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-6" id="entryImage">
-                        <img src="{{ $news[0]->image}}" alt="" class="entryImage">
+            <section><h1>Recent Posts</h1></section>
+            <ul>
+                <li class="col-sm-12" id="article">
+                    <div class="col-sm-10"  id="entryTitle">
+                        <h2 class="articleTitle"><a href="/article/{{$news[0]->id}}">{{ $news[0]->title }}</a></h2>
+                        <span class="cr-by">created by {{ $author[$news[0]->author] }}</span>
                     </div>
 
-                    <div class="col-sm-6"  id="entryContent">
-                        {{ $news[0]->description}}
+                    <div class="row">
+                        <div class="col-sm-6" id="entryImage">
+                            <img src="{{ $news[0]->image}}" alt="" class="entryImage">
+                        </div>
 
-                        {{\Illuminate\Support\Str::limit($news[0]->content, 150)}}
-                        @if (strlen($news[0]->conent) > 150)
-                            <span id="ellipses">...</span>
-                            <span id="more">{{ substr($news[0]->content, 150) }}</span>
-                        @endif
-                        <a href="/article/{{$news[0]->id}}">Read more</a>
+                        <div class="col-sm-6"  id="entryContent">
+                            {{ $news[0]->description}}
+
+                            {{\Illuminate\Support\Str::limit($news[0]->content, 150)}}
+                            @if (strlen($news[0]->conent) > 150)
+                                <span id="ellipses">...</span>
+                                <span id="more">{{ substr($news[0]->content, 150) }}</span>
+                            @endif
+                            <a href="/article/{{$news[0]->id}}">Read more</a>
+                        </div>
                     </div>
-                </div>
-
-                <div class="timestamp">
-                    <span class="entryDetails">{{ $news[0]->created_at->diffForHumans() }}</span>
-                </div>
-            </li>
+                    <div class="timestamp">
+                        <span class="entryDetails">{{ $news[0]->created_at->diffForHumans() }}</span>
+                    </div>
+                </li>
                     <hr>
-
                     <li class="col-sm-12" id="article">
                         <div class="col-sm-10"  id="entryTitle">
-                             <h2 class="articleTitle"><a href="/article/{{$article[1]->id}}">{{ $article[1]->title }}</a></h2>
+                            <h2 class="articleTitle"><a href="/article/{{$article[1]->id}}">{{ $article[1]->title }}</a></h2>
                             <span class="cr-by">created by {{ $author[$article[1]->author] }}</span>
                         </div>
 
@@ -93,10 +87,9 @@
                         </div>
                     </li>
                     <hr>
-
                     <li class="col-sm-12" id="article">
                         <div class="col-sm-10"  id="entryTitle">
-                             <h2 class="articleTitle"><a href="/article/{{$article[2]->id}}">{{ $article[2]->title }}</a></h2>
+                            <h2 class="articleTitle"><a href="/article/{{$article[2]->id}}">{{ $article[2]->title }}</a></h2>
                             <span class="cr-by">created by {{ $author[$article[2]->author] }}</span>
                         </div>
 
@@ -116,14 +109,12 @@
                                 <a href="/article/{{$article[2]->id}}">Read more</a>
                             </div>
                         </div>
-
                         <div class="timestamp">
                             <span class="entryDetails">{{ $article[2]->created_at->diffForHumans() }}</span>
                         </div>
                     </li>
                     <hr>
-
-            <ul>
+            </ul>
 
 
           </section>
@@ -145,7 +136,7 @@
                             <span id="ellipses">...</span>
                             <span id="more">{{ substr($article[0]->content, 50) }}</span>
                         @endif
-                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex justify-content-between align-items-center ">
                           <div class="btn-group">
                           <a href="/article/{{$article[0]->id}}">Read more</a>
                           </div>
