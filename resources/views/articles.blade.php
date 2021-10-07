@@ -5,13 +5,15 @@
 
     <div class="articleTitle container">
         <main role="main" class="articleTitle">
-            <section>
+            <!-- <section>
                 <h1>Category Selction / Searchbar</h1>
                 <br><br><br>
                 <br><br><br>
                 <br><hr>
-            </section>
-            <section>
+            </section> -->
+       
+            <section class="mt-5">
+
                 <ul>
                  @foreach ($articles as $article)
                     <li class="col-sm-12" id="article">

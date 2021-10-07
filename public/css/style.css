@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Slabo+13px&display=swap);
+/*$bg-carousel: rgba(223, 233, 241, 1);*/
+/*$colorCarousel:
+$color*/
+>>>>>>> front-end
 .carousel-control-next-icon {
   color: #c7bb8f;
 }
@@ -6595,7 +6602,7 @@ footer {
   }
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 20px;
 }
 
@@ -6629,8 +6636,23 @@ body {
   background-color: #c7bb8f;
 }
 
-#more {
-  display: none;
+a {
+  color: #2c2c2c;
+  text-decoration: none;
+}
+
+#entry-content a {
+  color: #2c2c2c;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Slabo 13px", serif;
+  font-weight: bold;
+  color: #2c2c2c;
 }
 
 <<<<<<< HEAD
