@@ -34,6 +34,7 @@
                     </table>
                 </div>
             </section>
+            {{ asset('svg/logo.svg') }}
             <section class="text-left w-100">
                 <div class="w-100 mt-5">
                     <h2>Articles:</h2>

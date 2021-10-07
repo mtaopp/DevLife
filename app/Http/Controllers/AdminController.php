@@ -16,16 +16,16 @@ class AdminController extends Controller
     public function index()
     {
         $users = User::all();
-        $hasrole = DB::table('model_has_roles')->get();
-        $
-        $roles = [];
-        foreach ($hasroles as $hasrole) {
-            echo $role->model_id;
-        }
+        $roles = DB::table('roles')->get();
+        $hasRole = DB::table('model_has_roles')->get();
+        // $roles = [];
+        // foreach ($hasrole as $role) {
+        //     echo $role->model_id;
+        // }
 
 
 
-die();
+// die();
         // echo '<pre>';
         // var_dump($users);
         // echo '</pre>';
@@ -35,6 +35,7 @@ die();
        return view('admin-panel', [
            'users' => $users,
            'roles' => $roles,
+           'hasRole' => $hasRole,
         ]);
     }
 
