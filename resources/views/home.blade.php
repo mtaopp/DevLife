@@ -35,7 +35,7 @@
                 <li class="col-sm-12" id="article">
                     <div class="col-sm-10"  id="entryTitle">
                         <h2 class="articleTitle"><a href="/article/{{$news[0]->id}}">{{ $news[0]->title }}</a></h2>
-                        <span class="cr-by">created by {{ $author[$news[0]->author] }}</span>
+                        <span class="cr-by"><i>created by {{ $author[$news[0]->author] }}</i></span>
                     </div>
 
                     <div class="row">
@@ -62,7 +62,7 @@
                     <li class="col-sm-12" id="article">
                         <div class="col-sm-10"  id="entryTitle">
                             <h2 class="articleTitle"><a href="/article/{{$article[1]->id}}">{{ $article[1]->title }}</a></h2>
-                            <span class="cr-by">created by {{ $author[$article[1]->author] }}</span>
+                            <span class="cr-by"><i>created by {{ $author[$news[1]->author] }}</i></span>
                         </div>
 
                         <div class="row">
@@ -90,7 +90,7 @@
                     <li class="col-sm-12" id="article">
                         <div class="col-sm-10"  id="entryTitle">
                             <h2 class="articleTitle"><a href="/article/{{$article[2]->id}}">{{ $article[2]->title }}</a></h2>
-                            <span class="cr-by">created by {{ $author[$article[2]->author] }}</span>
+                            <span class="cr-by"><i>created by {{ $author[$news[2]->author] }}</i></span>
                         </div>
 
                         <div class="row">
@@ -123,7 +123,9 @@
           <!-- end recent posts -->
 
             <div>
-              <div class="w-100">
+         
+              <div class="w-100"> 
+              <section><h1>Featured Posts</h1></section>
                 <div class="entryGallerie row">
                   <div class="col-md-4">
                     <div class="card mb-4 box-shadow">

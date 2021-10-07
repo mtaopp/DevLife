@@ -76,11 +76,16 @@ body {
 a {
   color: $color-dark;
   text-decoration: none;
+  :hover{
+    color: $color1;
+    text-decoration: none;
+  }
 }
 
-#entry-content a{
+.entry-content a{
   color: $color-dark;
   text-decoration: none;
+  padding-top: 10px;
 }
 
 h1,
@@ -119,5 +124,23 @@ h4{
     background-color: #c7bb8f;
 }
 }
+
+section{
+  padding:0 10px 10px 10px;
+}
+
+.entryImage{
+  padding: 10px 0 ;
+}
+
+#entryContent{
+  padding: 20px;
+}
+
+i{
+  font-size: 17px;
+}
+
+
 
 //button log in

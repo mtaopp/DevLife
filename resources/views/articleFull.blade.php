@@ -4,12 +4,12 @@
 
     <main>
             
-        <section class="container w-100">
+        <section class="container w-100 mt-5">
             <ul>
                 <li class="col-sm-12" id="article">
                     <div class="col-sm-12"  id="entryTitle">
                         <h2 class="articleTitle">{{ $article->title }}</h2>
-                        <span class="cr-by">created by {{ $author[$article->author] }}</span> 
+                        <span class="cr-by"><i>created by {{ $author[$article->author] }}</i></span> 
                         <div class="timestamp">
                             <span class="entryDetails"></span>
                         </div>

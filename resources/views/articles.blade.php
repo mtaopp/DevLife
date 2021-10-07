@@ -19,7 +19,7 @@
                     <li class="col-sm-12" id="article">
                         <div class="col-sm-12"  id="entryTitle">
                              <h2 class="entryTitle"><a href="/article/{{$article->id}}">{{ $article->title }}</a></h2>
-                            <span class="cr-by">created by {{ $author[$article->author] }}</span>
+                            <span class="cr-by"><i>created by {{ $author[$article->author] }}</i></span>
                         </div>
                         <div class="row">
                             <div class="col-sm-6" id="entryImage">
@@ -32,10 +32,10 @@
                             </div>
                             <div class="col-sm-6"  id="entryContent">
                                 {{ $article->description}}
-                                {{\Illuminate\Support\Str::limit($article->content, 150)}}
-                                @if (strlen($article->conent) > 150)
+                                {{\Illuminate\Support\Str::limit($article->content, 250)}}
+                                @if (strlen($article->conent) > 250)
                                     <span id="ellipses">...</span>
-                                    <span id="more">{{ substr($article->content, 150) }}</span>
+                                    <span id="more">{{ substr($article->content, 250) }}</span>
                                 @endif
                                 <a href="/article/{{$article->id}}">Read more</a>
                             </div>

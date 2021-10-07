@@ -6603,10 +6603,15 @@ a {
   color: #2c2c2c;
   text-decoration: none;
 }
+a :hover {
+  color: #c7bb8f;
+  text-decoration: none;
+}
 
-#entry-content a {
+.entry-content a {
   color: #2c2c2c;
   text-decoration: none;
+  padding-top: 10px;
 }
 
 h1,
@@ -6641,4 +6646,20 @@ h4 {
   color: #e9e9e9;
   text-decoration: none;
   background-color: #c7bb8f;
+}
+
+section {
+  padding: 0 10px 10px 10px;
+}
+
+.entryImage {
+  padding: 10px 0;
+}
+
+#entryContent {
+  padding: 20px;
+}
+
+i {
+  font-size: 17px;
 }
